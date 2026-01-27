@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Gas Cloud – Stock2</title>
+
+<script src="https://telegram.org/js/telegram-web-app.js?v=6"></script>
+
+<style>
+:root{
+  --red:#ff1a1a;
+  --bg:#0b0b0b;
+  --panel:#1a1a1a;
+  --panel-soft:#161616;
+  --card-bg:#2a2a2a;
+}
+
+/* RESET */
+*{
+  box-sizing:border-box;
+  -webkit-tap-highlight-color:transparent;
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:#fff;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  overflow-x:hidden;
+}
+
+/* WATERMARK */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:url("https://tgwos.github.io/mini-app/gas-cloud-logo.png") center / 70% no-repeat;
+  opacity:.04;
+  pointer-events:none;
+  z-index:0;
+}
+
+/* BACK BUTTON */
+.back-to-catalog{
+  position:fixed;
+  top:calc(12px + env(safe-area-inset-top));
+  left:12px;
+  z-index:1000;
+  padding:10px 14px;
+  font-size:13px;
+  font-weight:800;
+  border-radius:14px;
+  background:rgba(20,20,20,.9);
+  border:1px solid var(--red);
+  color:#fff;
+  box-shadow:0 0 12px rgba(255,0,0,.5);
+  cursor:pointer;
+}
+
+/* APP WRAPPER */
+.app{
+  position:relative;
+  z-index:1;
+  padding:80px 20px 40px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:22px;
+}
+
+/* HEADER PANEL */
+.header-panel{
+  width:100%;
+  max-width:420px;
+  background:var(--panel-soft);
+  border-radius:22px;
+  padding:20px 18px;
+  text-align:center;
+  border:1px solid rgba(255,255,255,.06);
+}
+
+.header-panel h1{
+  margin:0;
+  font-size:22px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+.header-panel p{
+  margin:8px 0 0;
+  font-size:13px;
+  letter-spacing:1px;
+  opacity:.65;
+}
+
+/* PANEL PRODUCTS */
+.panel{
+  width:100%;
+  max-width:420px;
+  background:var(--panel);
+  border-radius:26px;
+  padding:22px;
+  border:1px solid rgba(255,255,255,.06);
+  box-shadow:
+    0 0 30px rgba(0,0,0,.6),
+    inset 0 0 20px rgba(255,255,255,.02);
+}
+
+/* GRID PRODUCTS */
+.products{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+}
+
+/* PRODUCT CARD */
+.product{
+  background:var(--card-bg);
+  border-radius:18px;
+  padding:10px;
+  cursor:pointer;
+  box-shadow:0 0 14px rgba(255,0,0,.25);
+}
+
+/* MEDIA */
+.media{
+  aspect-ratio:1/1;
+  border-radius:14px;
+  overflow:hidden;
+  background:#000;
+  position:relative;
+}
+
+.media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  pointer-events:none;
+}
+
+.play-icon{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:46px;
+  opacity:.85;
+  pointer-events:none;
+}
+
+.name{
+  margin-top:8px;
+  text-align:center;
+  font-weight:700;
+  font-size:13px;
+}
+
+/* ===== MODAL ===== */
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.95);
+  display:none;
+  flex-direction:column;
+  z-index:999;
+}
+
+.modal-media{
+  background:#000;
+  display:flex;
+  justify-content:center;
+}
+
+.modal-media video,
+.modal-media img{
+  width:100%;
+  max-height:50vh;
+  object-fit:contain;
+}
+
+.modal-info{
+  flex:1;
+  padding:20px;
+  background:#111;
+  overflow-y:auto;
+}
+  /* PRICE LIST */
+.price-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 14px;
+  margin-bottom:6px;
+  background:#1a1a1a;
+  border-radius:12px;
+  font-size:14px;
+  font-weight:700;
+  border:1px solid rgba(255,255,255,.12);
+}
+
+.price-row span{opacity:.9;}
+.price-row strong{font-size:15px;}
+
+/* ORDER */
+.order{
+  position:sticky;
+  bottom:0;
+  background:#00ff99;
+  color:#000;
+  padding:16px;
+  border-radius:18px;
+  font-weight:900;
+  text-align:center;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+.close{
+  margin-top:12px;
+  text-align:center;
+  opacity:.6;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="back-to-catalog" onclick="goBack()">← Torna al Catalogo</div>
+
+<div class="app">
+
+  <!-- HEADER -->
+  <div class="header-panel">
+    <h1>Stock2</h1>
+    <p>Select a product</p>
+  </div>
+
+  <!-- PRODUCTS -->
+  <div class="panel">
+    <div class="products" id="products"></div>
+  </div>
+
+</div>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-media" id="modalMedia"></div>
+  <div class="modal-info">
+    <div class="price-list" id="priceList"></div>
+    <div class="order" onclick="order()">ACQUISTA</div>
+    <div class="close" onclick="closeModal()">Chiudi</div>
+  </div>
+</div>
+
+<script>
+const tg = window.Telegram.WebApp;
+tg.ready();
+tg.expand();
+
+/* ===== CONFIG ===== */
+const CATEGORY = "stock2";
+const CONTACT_USERNAME = "gascloud2";
+let selectedProduct = null;
+
+/* ===== LOAD PRODUCTS ===== */
+fetch("products.json?v=" + Date.now())
+.then(res => res.json())
+.then(products => {
+  const box = document.getElementById("products");
+
+  products.filter(p => p.category === CATEGORY).forEach(p => {
+    const card = document.createElement("div");
+    card.className = "product";
+
+    card.innerHTML =
+      '<div class="media">' +
+        '<img src="' + (p.previewImage || p.mediaUrl) + '">' +
+        (p.mediaType === "video" ? '<div class="play-icon">▶️</div>' : '') +
+      '</div>' +
+      '<div class="name">' + p.name + '</div>';
+
+    card.onclick = () => openModal(p);
+    box.appendChild(card);
+  });
+});
+
+/* ===== MODAL ===== */
+function openModal(p){
+  selectedProduct = p;
+  const mediaBox = document.getElementById("modalMedia");
+
+  if(p.mediaType === "video"){
+    mediaBox.innerHTML =
+      '<video src="' + p.mediaUrl + '" controls preload="metadata"></video>';
+  } else {
+    mediaBox.innerHTML = '<img src="' + p.mediaUrl + '">';
+  }
+
+  const list = document.getElementById("priceList");
+  list.innerHTML = "";
+
+  if(p.prices && p.prices.length){
+    p.prices.forEach(item => {
+      const row = document.createElement("div");
+      row.className = "price-row";
+      row.innerHTML =
+        '<span>' + item.quantity + ' g</span>' +
+        '<strong>€' + item.price + '</strong>';
+      list.appendChild(row);
+    });
+  } else {
+    const row = document.createElement("div");
+    row.className = "price-row";
+    row.innerHTML =
+      '<span>1 g</span>' +
+      '<strong>€' + p.price + '</strong>';
+    list.appendChild(row);
+  }
+
+  document.getElementById("modal").style.display = "flex";
+}
+
+function closeModal(){
+  document.getElementById("modal").style.display = "none";
+  document.getElementById("modalMedia").innerHTML = "";
+}
+
+function order(){
+  if(!selectedProduct) return;
+  const msg = encodeURIComponent("Hai scelto: " + selectedProduct.name);
+  window.open("https://t.me/" + CONTACT_USERNAME + "?text=" + msg, "_blank");
+}
+
+function goBack(){
+  window.location.href = "catalog.html";
+}
+</script>
+
+</body>
+</html>
