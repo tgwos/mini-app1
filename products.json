@@ -1,0 +1,163 @@
+[
+  
+{
+  "id": 1,
+  "name": "DRY CRIME",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1769172291/DRYCRIME_vxojr7.mp4",
+  "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769172366/drycrime_hptrrf.png",
+  "category": "stock1",
+  "prices": [
+    {"quantity": 50, "price": 200},
+    {"quantity": 100, "price": 380},
+    {"quantity": 500, "price": 1500},
+    {"quantity": 1000, "price": 2800}
+  ]
+},
+  {
+  "id": 2,
+  "name": "FROZEN BASE",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1769172965/FROZEN-BASE_ejrub0.mp4",
+  "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769173078/FROZEN-BASE_e3zn3n.png",
+  "category": "stock2",
+  "prices": [
+    {"quantity": 25, "price": 200},
+    {"quantity": 50, "price": 350},
+    {"quantity": 100, "price": 600},
+    {"quantity": 500, "price": 2250},
+    {"quantity": 1000, "price": 4200}
+  ]
+},
+  {
+  "id": 3,
+  "name": "CALISPAIN GIRL SCOUT",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1769179037/Cali_spain_girl_scout_ibwmf5.mp4",
+  "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769179157/cali_spain_wvjtst.png",
+  "category": "stock3",
+  "prices": [
+    {"quantity": 50, "price": 350},
+    {"quantity": 100, "price": 550},
+    {"quantity": 500, "price": 1900},
+    {"quantity": 1000, "price": 3400}
+  ]
+},
+{
+  "id": 4,
+  "name": "CALI LIME MINTZ",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1769179923/LIME_MINTZ_ckdcpx.mp4",
+  "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769180042/LIME_MINTZ_iuoo8o.png",
+  "category": "stock3",
+  "prices": [
+    {"quantity": 50, "price": 400},
+    {"quantity": 100, "price": 650},
+    {"quantity": 500, "price": 2700},
+    {"quantity": 1000, "price": 4500}
+  ]
+},
+{
+  "id": 5,
+  "name": "CALI BLUE RUNTZ",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1769182307/CALI_BLUE_RUNTZ_egfvka.mp4",
+  "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769182368/CALI_BLUE_RUNTZ_nbka1j.png",
+  "category": "stock3",
+  "prices": [
+    {"quantity": 50, "price": 400},
+    {"quantity": 100, "price": 650},
+    {"quantity": 500, "price": 2700},
+    {"quantity": 1000, "price": 4500}
+  ]
+},
+ {
+  "id": 6,
+  "name": "TANGIE NO FARM PASTE ANONYMOUS",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1769359825/tangie_no_farm_paste_anonymous_bobgho.mp4",
+  "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769359915/Screenshot_2026-01-25_175132_obh8pk.png",
+  "category": "stock2",
+  "prices": [
+    {"quantity": 50, "price": 450},
+    {"quantity": 100, "price": 850},
+    {"quantity": 500, "price": 3200},
+    {"quantity": 1000, "price": 6000}
+  ]
+},
+  
+{
+  "id": 7,
+  "name": "FULL MELT FROZEN 120U",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1769424830/full_melt_frozen_120u_qlar9b.mp4",
+  "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769424834/full_melt_120_u_frozen_o0m0g3.png",
+  "category": "stock2",
+  "prices": [
+    {"quantity": 50, "price": 450},
+    {"quantity": 100, "price": 850},
+    {"quantity": 500, "price": 3100},
+    {"quantity": 1000, "price": 5900}
+  ]
+},
+   
+{
+  "id": 8,
+  "name": "MY FUCKIN STASH FROZEN",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1769425785/MY_FUCKIN_STASH_FROZEN_obl4hp.mp4",
+  "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769425847/STASH_ha70zp.png",
+  "category": "stock2",
+  "prices": [
+    {"quantity": 50, "price": 450},
+    {"quantity": 100, "price": 900},
+    {"quantity": 500, "price": 3500},
+    {"quantity": 1000, "price": 7000}
+  ]
+},
+   
+{
+  "id": 9,
+  "name": "CALI USA PREMIUM",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1769430883/CALI_USA_TOP_hteucb.mp4",
+  "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769426337/CALI_USA_TOP_aqntej.png",
+  "category": "stock3",
+  "prices": [
+    {"quantity": 50, "price": 400},
+    {"quantity": 100, "price": 650},
+    {"quantity": 500, "price": 3500},
+    {"quantity": 1000, "price": 5800}
+  ]
+},
+   
+{
+  "id": 10,
+  "name": "OVETTI STATIC BARBARASH",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1769426663/OVETTI_BARBARASH_rpbzje.mp4",
+  "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769426700/OVETTI_i9e17q.png",
+  "category": "stock2",
+  "prices": [
+    {"quantity": 50, "price": 470},
+    {"quantity": 100, "price": 800},
+    {"quantity": 500, "price": 4200},
+    {"quantity": 1000, "price": 7500}
+  ]
+},
+   
+{
+  "id": 11,
+  "name": "DRY DUBAI CHOCOLADE",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1769427072/DRY_WORK_gka1nd.mp4",
+  "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769427071/DRY_WORK_ponju6.png",
+  "category": "stock1",
+  "prices": [
+    {"quantity": 50, "price": 200},
+    {"quantity": 100, "price": 350},
+    {"quantity": 500, "price": 1500},
+    {"quantity": 1000, "price": 2700}
+  ]
+}
+   ]
