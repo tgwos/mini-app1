@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Gas Cloud – Catalog</title>
+
+<script src="https://telegram.org/js/telegram-web-app.js?v=6"></script>
+
+<style>
+:root{
+  --red:#ff1a1a;
+  --bg:#0b0b0b;
+  --panel:#1a1a1a;
+  --panel-soft:#161616;
+  --card-bg:#2a2a2a;
+}
+
+/* RESET */
+*{
+  box-sizing:border-box;
+  -webkit-tap-highlight-color:transparent;
+}
+
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  color:#fff;
+  background:var(--bg);
+  overflow-x:hidden;
+}
+
+/* WATERMARK */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:url("https://tgwos.github.io/mini-app/gas-cloud-logo.png") center / 70% no-repeat;
+  opacity:.04;
+  pointer-events:none;
+  z-index:0;
+}
+
+/* BACK */
+.back{
+  position:fixed;
+  top:calc(12px + env(safe-area-inset-top));
+  left:12px;
+  z-index:10;
+  padding:10px 14px;
+  font-size:13px;
+  font-weight:800;
+  border-radius:14px;
+  background:rgba(20,20,20,.9);
+  border:1px solid var(--red);
+  box-shadow:0 0 12px rgba(255,0,0,.5);
+  cursor:pointer;
+}
+
+/* APP */
+.container{
+  position:relative;
+  z-index:1;
+  padding:80px 20px 40px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:22px;
+}
+
+/* HEADER */
+.header-panel{
+  width:100%;
+  max-width:420px;
+  background:var(--panel-soft);
+  border-radius:22px;
+  padding:20px 18px;
+  text-align:center;
+  border:1px solid rgba(255,255,255,0.06);
+}
+
+.header-panel h1{
+  margin:0;
+  font-size:22px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+.header-panel p{
+  margin:8px 0 0;
+  font-size:13px;
+  letter-spacing:1px;
+  opacity:.65;
+}
+
+/* PANEL */
+.panel{
+  width:100%;
+  max-width:420px;
+  background:var(--panel);
+  border-radius:26px;
+  padding:22px;
+  border:1px solid rgba(255,255,255,0.06);
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;
+}
+
+/* STOCK CARD */
+.stock-card{
+  aspect-ratio:1/1;
+  position:relative;
+  border-radius:22px;
+  background:linear-gradient(145deg,#303030,#1c1c1c);
+  border:1px solid rgba(255,255,255,0.08);
+  box-shadow:
+    inset 0 2px 4px rgba(255,255,255,.06),
+    inset 0 -4px 8px rgba(0,0,0,.8),
+    0 8px 22px rgba(0,0,0,.6),
+    0 0 16px rgba(255,0,0,.35);
+  cursor:pointer;
+  overflow:hidden;
+  transition:transform .12s ease;
+}
+
+.stock-card:active{
+  transform:scale(.95);
+}
+
+/* RIFLESSO */
+.stock-card::before{
+  content:"";
+  position:absolute;
+  top:-50%;
+  left:-80%;
+  width:60%;
+  height:200%;
+  background:linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,.35),
+    transparent
+  );
+  transform:rotate(12deg);
+  opacity:.55;
+  pointer-events:none;
+  animation:shine 4s ease-in-out infinite;
+}
+
+@keyframes shine{
+  0%{left:-80%}
+  45%{left:120%}
+  100%{left:120%}
+}
+
+/* CONTENUTO INTERNO (CLICK SAFE) */
+.stock-content{
+  position:absolute;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  pointer-events:none;
+}
+
+/* CORNICE LOGO — CERCHIO PERFETTO */
+.logo-frame{
+  width:64%;
+  padding-top:64%;
+  position:relative;
+  border-radius:50%;
+  background:linear-gradient(145deg,#ff2a2a,#7a0000);
+  box-shadow:
+    0 0 14px rgba(255,0,0,.6),
+    inset 0 0 6px rgba(0,0,0,.8);
+}
+
+.logo-frame img{
+  position:absolute;
+  inset:6px;
+  width:calc(100% - 12px);
+  height:calc(100% - 12px);
+  border-radius:50%;
+  object-fit:cover;
+  display:block;
+}
+
+/* TESTO */
+.stock-card span{
+  font-size:15px;
+  font-weight:900;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  text-align:center;
+}
+
+/* SCHERMI PICCOLI */
+@media(max-width:360px){
+  .stock-card span{font-size:13px;}
+}
+</style>
+</head>
+  <body>
+
+<div class="back" onclick="goBack()">⬅️ BACK</div>
+
+<div class="container">
+
+  <div class="header-panel">
+    <h1>Catalog</h1>
+    <p>Choose a stock category</p>
+  </div>
+
+  <div class="panel">
+    <div class="grid">
+
+      <div class="stock-card" onclick="openStock('stock-1.html')">
+        <div class="stock-content">
+          <div class="logo-frame">
+            <img src="https://tgwos.github.io/mini-app/gas-cloud-logo.png">
+          </div>
+          <span>DRY</span>
+        </div>
+      </div>
+
+      <div class="stock-card" onclick="openStock('stock-2.html')">
+        <div class="stock-content">
+          <div class="logo-frame">
+            <img src="https://tgwos.github.io/mini-app/gas-cloud-logo.png">
+          </div>
+          <span>FROZEN</span>
+        </div>
+      </div>
+
+      <div class="stock-card" onclick="openStock('stock-3.html')">
+        <div class="stock-content">
+          <div class="logo-frame">
+            <img src="https://tgwos.github.io/mini-app/gas-cloud-logo.png">
+          </div>
+          <span>CALI</span>
+        </div>
+      </div>
+
+      <div class="stock-card" onclick="openStock('stock-4.html')">
+        <div class="stock-content">
+          <div class="logo-frame">
+            <img src="https://tgwos.github.io/mini-app/gas-cloud-logo.png">
+          </div>
+          <span>ICE / ESTRATTI</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script>
+const tg = window.Telegram.WebApp;
+tg.ready();
+tg.expand();
+
+tg.BackButton.show();
+tg.BackButton.onClick(goBack);
+
+function goBack(){
+  tg.BackButton.hide();
+  location.href = "index.html";
+}
+
+function openStock(p){
+  tg.BackButton.hide();
+  location.assign(p);
+}
+</script>
+
+</body>
+</html>
