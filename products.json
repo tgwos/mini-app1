@@ -159,5 +159,34 @@
     {"quantity": 500, "price": 1500},
     {"quantity": 1000, "price": 2700}
   ]
+},
+   
+{
+  "id": 12,
+  "name": "BLUE ZUSHI TOP FILTERED 190-73u",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1770375759/bluezushi_top_filtered_190-73u_wicv8k.mp4",
+  "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1770375794/bluezushi_hsvhoj.png",
+  "category": "stock4",
+  "prices": [
+    
+    {"quantity": 100, "price": 500},
+    
+  ]
+},
+   
+{
+  "id": 13,
+  "name": "ALIEN ZKITTLEZ TOP FILTERED 190-73u",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1770376117/Alien_Zkittlez_Top_Filtered_190-73u_oikfzu.mp4",
+  "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1770376120/ALIEN_yc8t5t.png",
+  "category": "stock4",
+  "prices": [
+    
+    {"quantity": 100, "price": 500},
+   
+  ]
 }
    ]
+
