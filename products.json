@@ -90,14 +90,14 @@
   "id": 7,
   "name": "FULL MELT FROZEN 120U PLASMA STATIC",
   "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1769424830/full_melt_frozen_120u_qlar9b.mp4",
+  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1770467549/FULL_MELT_FROZEN_PLASMASTATIC_tzoulp.mp4",
   "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769424834/full_melt_120_u_frozen_o0m0g3.png",
   "category": "stock2",
   "prices": [
     {"quantity": 50, "price": 490},
     {"quantity": 100, "price": 900},
-    {"quantity": 500, "price": 3700},
-    {"quantity": 1000, "price": 6200}
+    {"quantity": 500, "price": 4100},
+    {"quantity": 1000, "price": 7900}
   ]
 },
    
