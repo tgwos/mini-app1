@@ -103,7 +103,7 @@
    
 {
   "id": 8,
-  "name": "MY FUCKIN STASH FROZEN",
+  "name": "MELT PREMIUM FORBIDDEN",
   "mediaType": "video",
   "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1769425785/MY_FUCKIN_STASH_FROZEN_obl4hp.mp4",
   "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769425847/STASH_ha70zp.png",
@@ -112,7 +112,7 @@
     {"quantity": 50, "price": 450},
     {"quantity": 100, "price": 900},
     {"quantity": 500, "price": 3500},
-    {"quantity": 1000, "price": 7000}
+    {"quantity": 1000, "price": 5800}
   ]
 },
    
@@ -133,7 +133,7 @@
    
 {
   "id": 10,
-  "name": "OVETTI STATIC BARBARASH",
+  "name": "MELT PREMIUM GMO X STRAWBERRY",
   "mediaType": "video",
   "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1769426663/OVETTI_BARBARASH_rpbzje.mp4",
   "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769426700/OVETTI_i9e17q.png",
