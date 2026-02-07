@@ -187,6 +187,23 @@
     {"quantity": 100, "price": 500},
    {"quantity": 500, "price": 2200}
   ]
+},
+   
+
+{
+  "id": 14,
+  "name": "MELT PREMIUM LIMOSA",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1770465615/MELT_PREMIUM_LIMOSA_rlg1ta.mp4",
+  "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1770465687/LIMOSA_dgjz3p.png",
+  "category": "stock2",
+  "prices": [
+    
+   {"quantity": 50, "price": 450},
+    {"quantity": 100, "price": 800},
+    {"quantity": 500, "price": 3500},
+    {"quantity": 1000, "price": 5800}
+  ]
 }
    ]
 
