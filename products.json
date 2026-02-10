@@ -53,7 +53,7 @@
   "prices": [
     {"quantity": 50, "price": 400},
     {"quantity": 100, "price": 550},
-    {"quantity": 500, "price": 2700},
+    {"quantity": 500, "price": 2500},
     {"quantity": 1000, "price": 4500}
   ]
 },
@@ -67,7 +67,7 @@
   "prices": [
     {"quantity": 50, "price": 400},
     {"quantity": 100, "price": 550},
-    {"quantity": 500, "price": 2700},
+    {"quantity": 500, "price": 2500},
     {"quantity": 1000, "price": 4500}
   ]
 },
