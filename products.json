@@ -124,7 +124,7 @@
   "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769426337/CALI_USA_TOP_aqntej.png",
   "category": "stock3",
   "prices": [
-    {"quantity": 50, "price": 400},
+    {"quantity": 50, "price": 420},
     {"quantity": 100, "price": 650},
     {"quantity": 500, "price": 3000},
     {"quantity": 1000, "price": 5500}
