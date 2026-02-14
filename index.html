@@ -4,221 +4,189 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Gas Cloud</title>
-
 <script src="https://telegram.org/js/telegram-web-app.js?v=6"></script>
 
 <style>
 :root { --red:#ff1a1a; }
 
-* {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  color: #fff;
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  color:#fff;
   background:
-    radial-gradient(circle at 50% 120%, rgba(255,0,0,.25), transparent 55%),
-    linear-gradient(180deg, #020202, #0a0a0a 40%, #020202);
+    radial-gradient(circle at 50% 120%, rgba(255,0,0,.18), transparent 55%),
+    linear-gradient(180deg,#020202,#0a0a0a 40%,#020202);
 }
 
-/* ===== LAYOUT ===== */
-.container {
-  padding: 28px 16px 120px;
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
-  align-items: center;
+/* ===== HEADER ===== */
+.container{
+  padding:28px 16px 130px;
+  display:flex;
+  flex-direction:column;
+  gap:26px;
+  align-items:center;
 }
 
-.bubble {
-  width: 100%;
-  max-width: 420px;
-  background: linear-gradient(180deg, rgba(255,40,40,.3), rgba(10,10,10,.95));
-  border-radius: 22px;
-  padding: 22px;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 900;
-  letter-spacing: 4px;
+.bubble{
+  width:100%;
+  max-width:420px;
+  background:linear-gradient(180deg,#240000,#050505);
+  border:1px solid var(--red);
+  border-radius:22px;
+  padding:22px;
+  text-align:center;
+  font-size:22px;
+  font-weight:900;
+  letter-spacing:4px;
 }
 
-.bubble::after {
-  content: "Official bot";
-  display: block;
-  margin-top: 8px;
-  font-size: 11px;
-  letter-spacing: 2px;
-  opacity: .7;
+.bubble::after{
+  content:"Official bot";
+  display:block;
+  margin-top:8px;
+  font-size:11px;
+  letter-spacing:2px;
+  opacity:.7;
 }
 
-.panel {
-  width: 100%;
-  max-width: 420px;
-  background: linear-gradient(180deg, #141414, #070707);
-  border-radius: 26px;
-  padding: 22px;
+/* ===== PANEL ===== */
+.panel{
+  width:100%;
+  max-width:420px;
+  background:#070707;
+  border-radius:26px;
+  padding:22px;
+  border:1px solid rgba(255,0,0,.25);
 }
 
 /* ===== GRID ===== */
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
 }
 
-/* ===== CATALOGO ===== */
-.card-catalog {
-  grid-column: 1 / -1;
-  height: 130px;              /* 🔥 più alto */
-  border-radius: 28px;
-  background: linear-gradient(
-    180deg,
-    rgba(255,40,40,.25),
-    #060606
-  );
-  display: flex;
-  align-items: center;
-  gap: 22px;
-  padding: 0 26px;
-  cursor: pointer;
-  box-shadow: 0 20px 50px rgba(0,0,0,.9);
+/* ===== CATALOGO (PRIMARY) ===== */
+.card-catalog{
+  grid-column:1/-1;
+  height:140px;
+  border-radius:26px;
+  background:linear-gradient(180deg,#140000,#050505);
+  border:2px solid var(--red);
+  display:flex;
+  align-items:center;
+  gap:22px;
+  padding:0 26px;
 }
 
-.card-catalog .logo-frame {
-  width: 92px;   /* 🔥 logo più grande */
-  height: 92px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #ff2a2a, #5a0000);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.card-catalog img{
+  width:88px;
+  height:88px;
+  border-radius:50%;
 }
 
-.card-catalog img {
-  width: 84%;
-  height: 84%;
-  border-radius: 50%;
+.card-catalog span{
+  flex:1;
+  text-align:center;
+  font-size:20px;
+  font-weight:900;
+  letter-spacing:4px;
 }
 
-.card-catalog span {
-  flex: 1;
-  text-align: center;
-  font-size: 20px;     /* 🔥 testo più grande */
-  font-weight: 900;
-  letter-spacing: 4px;
+/* ===== SECONDARY BUTTONS ===== */
+.card-small{
+  height:135px;
+  border-radius:22px;
+  background:#050505;
+  border:1px solid rgba(255,0,0,.5);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
 }
 
-/* ===== BOTTONI SOTTO (2 + 1) ===== */
-.card-small {
-  height: 140px;
-  border-radius: 24px;
-  background: linear-gradient(180deg, #1b1b1b, #060606);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  cursor: pointer;
+.card-small.center{
+  grid-column:1/-1;
+  max-width:200px;
+  justify-self:center;
 }
 
-.card-small.center {
-  grid-column: 1 / -1;
-  justify-self: center;
-  max-width: 200px;
+.card-small img{
+  width:64px;
+  height:64px;
+  border-radius:50%;
 }
 
-.card-small .logo-frame {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #ff2a2a, #5a0000);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-small img {
-  width: 84%;
-  height: 84%;
-  border-radius: 50%;
-  transform: translateY(2px);
-}
-
-.card-small span {
-  padding: 6px 12px;
-  border-radius: 12px;
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 1.4px;
-  background: linear-gradient(
-    180deg,
-    rgba(255,40,40,.55),
-    rgba(10,10,10,.95)
-  );
+.card-small span{
+  padding:6px 14px;
+  border-radius:10px;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:1.4px;
+  border:1px solid var(--red);
+  background:#0a0a0a;
 }
 
 /* ===== BOTTOM BAR ===== */
-.bottom-bar {
-  position: fixed;
-  bottom: 14px;
-  left: 14px;
-  right: 14px;
-  height: 70px;
-  background: linear-gradient(180deg, #0f0f0f, #050505);
-  border-radius: 26px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.bottom-bar{
+  position:fixed;
+  bottom:14px;
+  left:14px;
+  right:14px;
+  height:68px;
+  background:#050505;
+  border-radius:26px;
+  border:1px solid rgba(255,0,0,.4);
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
 }
 
-.bottom-bar a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--red);
-  font-size: 12px;
-  font-weight: 800;
-  text-decoration: none;
+.bottom-bar a{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:var(--red);
+  font-size:12px;
+  font-weight:800;
+  text-decoration:none;
 }
 
-.bottom-bar svg {
-  width: 22px;
-  height: 22px;
-  fill: var(--red);
+.bottom-bar svg{
+  width:22px;
+  height:22px;
+  fill:var(--red);
 }
 
 /* ===== POPUP ===== */
-.popup-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  pointer-events: none;
+.popup-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.65);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  pointer-events:none;
 }
 
-.popup-overlay.show {
-  opacity: 1;
-  pointer-events: auto;
+.popup-overlay.show{opacity:1;pointer-events:auto}
+
+.popup-box{
+  padding:18px 36px;
+  border:2px solid var(--red);
+  background:#050505;
 }
 
-.popup-box {
-  padding: 20px 40px;
-  border: 2px solid var(--red);
-  background: #050505;
-}
-
-.popup-box a {
-  color: var(--red);
-  font-size: 16px;
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-decoration: none;
+.popup-box a{
+  color:var(--red);
+  font-size:16px;
+  font-weight:900;
+  letter-spacing:2px;
+  text-decoration:none;
 }
 </style>
 </head>
@@ -232,30 +200,22 @@ body {
     <div class="grid">
 
       <div class="card-catalog" onclick="location.href='catalog.html'">
-        <div class="logo-frame">
-          <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
-        </div>
+        <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
         <span>CATALOGO</span>
       </div>
 
       <div class="card-small" onclick="openPopup('https://t.me/GasCloudSupport')">
-        <div class="logo-frame">
-          <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
-        </div>
+        <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
         <span>CONTACTS</span>
       </div>
 
       <div class="card-small" onclick="openPopup('https://t.me/GASCLOUD2')">
-        <div class="logo-frame">
-          <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
-        </div>
+        <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
         <span>CHANNELS</span>
       </div>
 
       <div class="card-small center" onclick="openPopup('https://t.me/GASCLOUD2')">
-        <div class="logo-frame">
-          <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
-        </div>
+        <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
         <span>CREATED BY</span>
       </div>
 
@@ -265,23 +225,15 @@ body {
 
 <div class="bottom-bar">
   <a href="https://t.me/GASCLOUD2">
-    <svg viewBox="0 0 24 24">
-      <path d="M9.04 15.84 8.9 19.7c.27 0 .39-.11.53-.25l2.54-2.44 5.27 3.86c.97.54 1.66.26 1.9-.9l3.44-16.1c.33-1.5-.54-2.09-1.49-1.74L1.8 9.7c-1.45.56-1.43 1.35-.26 1.71l4.88 1.52L18.6 5.5c.57-.36 1.1-.16.67.2z"/>
-    </svg>
+    <svg viewBox="0 0 24 24"><path d="M9.04 15.84 8.9 19.7c.27 0 .39-.11.53-.25l2.54-2.44 5.27 3.86c.97.54 1.66.26 1.9-.9l3.44-16.1c.33-1.5-.54-2.09-1.49-1.74L1.8 9.7c-1.45.56-1.43 1.35-.26 1.71l4.88 1.52L18.6 5.5c.57-.36 1.1-.16.67.2z"/></svg>
     Telegram
   </a>
-
   <a href="https://instagram.com/">
-    <svg viewBox="0 0 24 24">
-      <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"/>
-    </svg>
+    <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"/></svg>
     Instagram
   </a>
-
   <a href="https://signal.org/">
-    <svg viewBox="0 0 24 24">
-      <path d="M12 2a10 10 0 1 0 0 20"/>
-    </svg>
+    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20"/></svg>
     Signal
   </a>
 </div>
@@ -297,18 +249,18 @@ const tg = window.Telegram.WebApp;
 tg.ready();
 tg.expand();
 
-const popup = document.getElementById("popup");
-const popupLink = document.getElementById("popup-link");
+const popup=document.getElementById("popup");
+const popupLink=document.getElementById("popup-link");
 
-function openPopup(url) {
-  popupLink.href = url;
+function openPopup(url){
+  popupLink.href=url;
   popup.classList.add("show");
 }
-
-function closePopup() {
+function closePopup(){
   popup.classList.remove("show");
 }
 </script>
 
 </body>
 </html>
+
