@@ -109,9 +109,8 @@ body{
 }
 
 .card-small.center{
-  grid-column:1/-1;
-  max-width:200px;
-  justify-self:center;
+  grid-column:auto;
+  max-width:none;
 }
 
 .card-small img{
@@ -158,6 +157,10 @@ body{
 .bottom-bar svg{
   width:22px;
   height:22px;
+  fill:none;
+  stroke:var(--red);
+}
+.bottom-bar svg path{
   fill:var(--red);
 }
 
