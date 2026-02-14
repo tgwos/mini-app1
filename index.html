@@ -200,12 +200,14 @@ body{
 
 .popup-username{
   display:block;
+  margin-top:6px;
   font-size:14px;
   font-weight:800;
   letter-spacing:1px;
   color:var(--red);
   text-decoration:none;
 }
+  
 </style>
 </head>
 
@@ -222,10 +224,16 @@ body{
         <span>CATALOGO</span>
       </div>
 
-      <div class="card-small"
-     onclick="openPopup('CONTACT','@GasCloud2','https://t.me/GasCloud2')">
-  <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
-  <span>CONTACTS</span>
+     <div id="popup" class="popup-overlay" onclick="closePopup()">
+  <div class="popup-box" onclick="event.stopPropagation()">
+    <div class="popup-title" id="popup-title"></div>
+
+    <a class="popup-username" id="popup-link-telegram"
+       href="#" target="_blank"></a>
+
+    <a class="popup-username" id="popup-link-signal"
+       href="#" target="_blank"></a>
+  </div>
 </div>
 
       <div class="card-small"
@@ -275,12 +283,20 @@ tg.expand();
 
 const popup = document.getElementById("popup");
 const popupTitle = document.getElementById("popup-title");
-const popupLink = document.getElementById("popup-link");
+const popupTelegram = document.getElementById("popup-link-telegram");
+const popupSignal = document.getElementById("popup-link-signal");
 
-function openPopup(title, username, url){
+function openPopup(title, tgUser, tgUrl, signalUser, signalUrl){
   popupTitle.innerText = title;
-  popupLink.innerText = username;
-  popupLink.href = url;
+
+  // Telegram
+  popupTelegram.innerText = tgUser;
+  popupTelegram.onclick = () => tg.openLink(tgUrl);
+
+  // Signal
+  popupSignal.innerText = "Signal: " + signalUser;
+  popupSignal.onclick = () => tg.openLink(signalUrl);
+
   popup.classList.add("show");
 }
 
