@@ -50,7 +50,7 @@ body{
   gap:22px;
 }
 
-/* HEADER */
+/* HEADER 
 .header-panel{
   width:100%;
   max-width:420px;
@@ -59,6 +59,28 @@ body{
   padding:20px 18px;
   text-align:center;
   border:1px solid rgba(255,255,255,.06);
+}*/
+  .bubble{
+  width:100%;
+  max-width:420px;
+  background:linear-gradient(180deg,#240000,#050505);
+  border:1px solid var(--red);
+  border-radius:22px;
+  padding:22px;
+  text-align:center;
+  font-size:22px;
+  font-weight:900;
+  letter-spacing:4px;
+  text-transform:uppercase;
+}
+
+.bubble::after{
+  content:"Choose a stock category";
+  display:block;
+  margin-top:8px;
+  font-size:11px;
+  letter-spacing:2px;
+  opacity:.7;
 }
 
 .header-panel h1{
@@ -138,10 +160,7 @@ body{
 
 <div class="container">
 
-  <div class="header-panel">
-    <h1>Catalog</h1>
-    <p>Choose a stock category</p>
-  </div>
+  <div class="bubble">Catalog</div>
 
   <div class="panel">
     <div class="grid">
