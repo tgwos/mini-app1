@@ -107,6 +107,7 @@ body{
 .card-small.center{
   grid-column:1/-1;
   justify-self:center;
+  width:calc(50% - 9px); /* stessa larghezza degli altri */
 }
 
 .card-small img{
@@ -227,15 +228,17 @@ body{
       </div>
 
       <!-- CHANNELS -->
-      <div class="card-small"
-           onclick="openPopup(
-             'CHANNEL',
-             '📢 Telegram: GASCLOUDPRIVE',
-             'https://t.me/INSERT_CHANNEL_LINK'
-           )">
-        <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
-        <span>CHANNELS</span>
-      </div>
+     <div class="card-small"
+     onclick="openPopup(
+       'CHANNEL',
+       '📢 Telegram: GASCLOUDPRIVE',
+       'https://t.me/INSERT_CHANNEL_LINK',     <!-- LINK TELEGRAM CHANNEL -->
+       '📞 Signal',
+       'https://signal.me/#INSERT_SIGNAL_LINK' <!-- LINK SIGNAL CHANNEL -->
+     )">
+  <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
+  <span>CHANNELS</span>
+</div>
 
       <!-- CREATED BY -->
       <div class="card-small center"
