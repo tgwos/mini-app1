@@ -11,9 +11,6 @@
 :root{
   --red:#ff1a1a;
   --bg:#0b0b0b;
-  --panel:#1a1a1a;
-  --panel-soft:#161616;
-  --card-bg:#2a2a2a;
 }
 
 /* RESET */
@@ -27,21 +24,9 @@ body{
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
   color:#fff;
   background:var(--bg);
-  overflow-x:hidden;
 }
 
-/* WATERMARK */
-body::before{
-  content:"";
-  position:fixed;
-  inset:0;
-  background:url("https://tgwos.github.io/mini-app1/gas-cloud-logo.png") center / 70% no-repeat;
-  opacity:.04;
-  pointer-events:none;
-  z-index:0;
-}
-
-/* BACK */
+/* BACK BUTTON */
 .back{
   position:fixed;
   top:calc(12px + env(safe-area-inset-top));
@@ -51,16 +36,13 @@ body::before{
   font-size:13px;
   font-weight:800;
   border-radius:14px;
-  background:rgba(20,20,20,.9);
+  background:#050505;
   border:1px solid var(--red);
-  box-shadow:0 0 12px rgba(255,0,0,.5);
   cursor:pointer;
 }
 
-/* APP */
+/* CONTAINER */
 .container{
-  position:relative;
-  z-index:1;
   padding:80px 20px 40px;
   display:flex;
   flex-direction:column;
@@ -72,11 +54,11 @@ body::before{
 .header-panel{
   width:100%;
   max-width:420px;
-  background:var(--panel-soft);
+  background:#070707;
   border-radius:22px;
   padding:20px 18px;
   text-align:center;
-  border:1px solid rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,.06);
 }
 
 .header-panel h1{
@@ -98,10 +80,10 @@ body::before{
 .panel{
   width:100%;
   max-width:420px;
-  background:var(--panel);
+  background:#050505;
   border-radius:26px;
   padding:22px;
-  border:1px solid rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,.06);
 }
 
 /* GRID */
@@ -111,105 +93,48 @@ body::before{
   gap:16px;
 }
 
-/* STOCK CARD */
+/* STOCK CARD – STILE INDEX */
 .stock-card{
   aspect-ratio:1/1;
-  position:relative;
   border-radius:22px;
-  background:linear-gradient(145deg,#303030,#1c1c1c);
-  border:1px solid rgba(255,255,255,0.08);
-  box-shadow:
-    inset 0 2px 4px rgba(255,255,255,.06),
-    inset 0 -4px 8px rgba(0,0,0,.8),
-    0 8px 22px rgba(0,0,0,.6),
-    0 0 16px rgba(255,0,0,.35);
-  cursor:pointer;
-  overflow:hidden;
-  transition:transform .12s ease;
-}
-
-.stock-card:active{
-  transform:scale(.95);
-}
-
-/* RIFLESSO */
-.stock-card::before{
-  content:"";
-  position:absolute;
-  top:-50%;
-  left:-80%;
-  width:60%;
-  height:200%;
-  background:linear-gradient(
-    120deg,
-    transparent,
-    rgba(255,255,255,.35),
-    transparent
-  );
-  transform:rotate(12deg);
-  opacity:.55;
-  pointer-events:none;
-  animation:shine 4s ease-in-out infinite;
-}
-
-@keyframes shine{
-  0%{left:-80%}
-  45%{left:120%}
-  100%{left:120%}
-}
-
-/* CONTENUTO INTERNO (CLICK SAFE) */
-.stock-content{
-  position:absolute;
-  inset:0;
+  background:#050505;
+  border:1px solid rgba(255,0,0,.5);
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  gap:12px;
-  pointer-events:none;
+  gap:14px;
+  cursor:pointer;
 }
 
-/* CORNICE LOGO — CERCHIO PERFETTO */
-.logo-frame{
-  width:64%;
-  padding-top:64%;
-  position:relative;
+.stock-card img{
+  width:64px;
+  height:64px;
   border-radius:50%;
-  background:linear-gradient(145deg,#ff2a2a,#7a0000);
-  box-shadow:
-    0 0 14px rgba(255,0,0,.6),
-    inset 0 0 6px rgba(0,0,0,.8);
 }
 
-.logo-frame img{
-  position:absolute;
-  inset:6px;
-  width:calc(100% - 12px);
-  height:calc(100% - 12px);
-  border-radius:50%;
-  object-fit:cover;
-  display:block;
-}
-
-/* TESTO */
 .stock-card span{
-  font-size:15px;
+  padding:6px 14px;
+  border-radius:10px;
+  font-size:12px;
   font-weight:900;
-  letter-spacing:1.5px;
+  letter-spacing:1.4px;
   text-transform:uppercase;
+  border:1px solid var(--red);
+  background:#0a0a0a;
   text-align:center;
 }
 
-/* SCHERMI PICCOLI */
+/* SMALL SCREENS */
 @media(max-width:360px){
-  .stock-card span{font-size:13px;}
+  .stock-card span{font-size:11px;}
 }
 </style>
 </head>
-  <body>
 
-<div class="back" onclick="goBack()">⬅️ BACK</div>
+<body>
+
+<div class="back" onclick="goBack()">⬅ BACK</div>
 
 <div class="container">
 
@@ -221,40 +146,35 @@ body::before{
   <div class="panel">
     <div class="grid">
 
+      <!-- PROMO FIRST -->
+      <div class="stock-card" onclick="openStock('stock-4.html')">
+        <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
+        <span>PRODOTTI IN PROMOZIONE</span>
+      </div>
+
       <div class="stock-card" onclick="openStock('stock-1.html')">
-        <div class="stock-content">
-          <div class="logo-frame">
-            <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
-          </div>
-          <span>DRY</span>
-        </div>
+        <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
+        <span>DRY</span>
       </div>
 
       <div class="stock-card" onclick="openStock('stock-2.html')">
-        <div class="stock-content">
-          <div class="logo-frame">
-            <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
-          </div>
-          <span>FROZEN</span>
-        </div>
+        <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
+        <span>FROZEN</span>
       </div>
 
       <div class="stock-card" onclick="openStock('stock-3.html')">
-        <div class="stock-content">
-          <div class="logo-frame">
-            <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
-          </div>
-          <span>CALI</span>
-        </div>
+        <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
+        <span>CALI</span>
       </div>
 
-      <div class="stock-card" onclick="openStock('stock-4.html')">
-        <div class="stock-content">
-          <div class="logo-frame">
-            <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
-          </div>
-          <span>PRODOTTI IN PROMOZONE</span>
-        </div>
+      <div class="stock-card" onclick="openStock('stock-5.html')">
+        <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
+        <span>STOCK 5</span>
+      </div>
+
+      <div class="stock-card" onclick="openStock('stock-6.html')">
+        <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
+        <span>STOCK 6</span>
       </div>
 
     </div>
