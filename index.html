@@ -174,21 +174,36 @@ body{
   justify-content:center;
   opacity:0;
   pointer-events:none;
+  transition:.2s;
 }
 
-.popup-overlay.show{opacity:1;pointer-events:auto}
+.popup-overlay.show{
+  opacity:1;
+  pointer-events:auto;
+}
 
 .popup-box{
-  padding:18px 36px;
+  min-width:240px;
+  padding:22px 26px;
   border:2px solid var(--red);
   background:#050505;
+  border-radius:14px;
+  text-align:center;
 }
 
-.popup-box a{
-  color:var(--red);
-  font-size:16px;
+.popup-title{
+  font-size:15px;
   font-weight:900;
   letter-spacing:2px;
+  margin-bottom:12px;
+}
+
+.popup-username{
+  display:block;
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:1px;
+  color:var(--red);
   text-decoration:none;
 }
 </style>
@@ -207,20 +222,23 @@ body{
         <span>CATALOGO</span>
       </div>
 
-      <div class="card-small" onclick="openPopup('https://t.me/GasCloudSupport')">
-        <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
-        <span>CONTACTS</span>
-      </div>
+      <div class="card-small"
+     onclick="openPopup('CONTACT','@GasCloudSupport','https://t.me/GasCloudSupport')">
+  <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
+  <span>CONTACTS</span>
+</div>
 
-      <div class="card-small" onclick="openPopup('https://t.me/GASCLOUD2')">
-        <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
-        <span>CHANNELS</span>
-      </div>
+      <div class="card-small"
+     onclick="openPopup('CHANNEL','@GASCLOUD2','https://t.me/GASCLOUD2')">
+  <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
+  <span>CHANNELS</span>
+</div>
 
-      <div class="card-small center" onclick="openPopup('https://t.me/GASCLOUD2')">
-        <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
-        <span>CREATED BY</span>
-      </div>
+      <div class="card-small"
+     onclick="openPopup('CREATED BY','Gas Cloud © 2026','https://t.me/GASCLOUD2')">
+  <img src="https://tgwos.github.io/mini-app1/gas-cloud-logo.png">
+  <span>CREATED BY</span>
+</div>
 
     </div>
   </div>
@@ -243,7 +261,8 @@ body{
 
 <div id="popup" class="popup-overlay" onclick="closePopup()">
   <div class="popup-box" onclick="event.stopPropagation()">
-    <a id="popup-link" href="#" target="_blank">Telegram</a>
+    <div class="popup-title" id="popup-title"></div>
+    <a class="popup-username" id="popup-link" href="#" target="_blank"></a>
   </div>
 </div>
 
@@ -252,13 +271,17 @@ const tg = window.Telegram.WebApp;
 tg.ready();
 tg.expand();
 
-const popup=document.getElementById("popup");
-const popupLink=document.getElementById("popup-link");
+const popup = document.getElementById("popup");
+const popupTitle = document.getElementById("popup-title");
+const popupLink = document.getElementById("popup-link");
 
-function openPopup(url){
-  popupLink.href=url;
+function openPopup(title, username, url){
+  popupTitle.innerText = title;
+  popupLink.innerText = username;
+  popupLink.href = url;
   popup.classList.add("show");
 }
+
 function closePopup(){
   popup.classList.remove("show");
 }
