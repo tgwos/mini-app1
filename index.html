@@ -203,9 +203,74 @@ body{
   fill:var(--red);
   stroke-width:2;
 }
+  .createby-fab{
+  position:fixed;
+  right:18px;
+  bottom:0; /* gestito da JS */
+  width:62px;
+  height:62px;
+  border-radius:50%;
+  background:#050505;
+  border:2px solid var(--red);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  z-index:1000;
+  box-shadow:0 0 18px rgba(255,0,0,.35);
+}
+
+.createby-fab img{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+}
+
+/* Nuvoletta */
+.createby-tooltip{
+  position:absolute;
+  right:74px;
+  top:50%;
+  transform:translateY(-50%);
+  background:#050505;
+  border:1px solid var(--red);
+  padding:10px 14px;
+  border-radius:14px;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:1px;
+  white-space:nowrap;
+  opacity:0;
+  pointer-events:none;
+  transition:.25s;
+}
+
+.createby-tooltip::after{
+  content:"";
+  position:absolute;
+  right:-6px;
+  top:50%;
+  transform:translateY(-50%);
+  border-width:6px;
+  border-style:solid;
+  border-color:transparent transparent transparent var(--red);
+}
+
+.createby-fab:hover .createby-tooltip{
+  opacity:1;
+}
 </style>
 </head>
+<!-- FLOATING CREATE BY -->
+<div id="createbyFab" class="createby-fab"
+     onclick="tg.openLink('https://t.me/boxcreate22')">
 
+  <img src="https://tgwos.github.io/mini-app1/boxcreate.png">
+
+  <div class="createby-tooltip">
+    ✨ Crea anche tu<br>la tua mini app
+  </div>
+</div>
 <body>
 
 <div class="container">
@@ -324,6 +389,21 @@ function closePopup(){
   popup.classList.remove("show");
 }
 </script>
+<script>
+function positionCreateBy(){
+  const fab = document.getElementById("createbyFab");
+  const bottomBar = document.querySelector(".bottom-bar");
 
+  if(!fab || !bottomBar) return;
+
+  const barHeight = bottomBar.offsetHeight;
+  const margin = 14;
+
+  fab.style.bottom = (barHeight + margin * 2) + "px";
+}
+
+positionCreateBy();
+window.addEventListener("resize", positionCreateBy);
+</script>
 </body>
 </html>
