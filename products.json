@@ -235,7 +235,7 @@
     
    {"quantity": 10, "price": 500},
     {"quantity": 50, "price": 2500},
-    {"quantity": 100, "price": 40000},
+    {"quantity": 100, "price": 4000},
     {"quantity": 1000, "price": 0000}
   ]
 },
@@ -251,7 +251,7 @@
     
    {"quantity": 10, "price": 500},
     {"quantity": 50, "price": 2500},
-    {"quantity": 100, "price": 40000},
+    {"quantity": 100, "price": 4000},
     {"quantity": 1000, "price": 0000}
   ]
 }
