@@ -226,34 +226,19 @@
 
 {
   "id": 16,
-  "name": "ICE WPFF 70U GRAPE GAS",
+  "name": "ICE WPFF 70U GRAPE GAS PEACH MINTZ",
   "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/dzrfooy6a/image/upload/v1772291773/ICE3_nlnk5l.jpg",
+  "mediaUrl": "https://res.cloudinary.com/dzrfooy6a/video/upload/v1772293032/ICE_wpo3z8.mp4",
   "previewImage": "https://res.cloudinary.com/dzrfooy6a/image/upload/v1772291773/ICE3_nlnk5l.jpg",
   "category": "stock5",
   "prices": [
     
    {"quantity": 10, "price": 500},
     {"quantity": 50, "price": 2500},
-    {"quantity": 100, "price": 4000},
-    {"quantity": 1000, "price": 0000}
-  ]
-},
-   
-{
-  "id": 17,
-  "name": "ICE WPFF 70U PEACH MINTZ",
-  "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/dzrfooy6a/image/upload/v1772291773/ICE4_bkpvj4.jpg",
-  "previewImage": "https://res.cloudinary.com/dzrfooy6a/image/upload/v1772291773/ICE4_bkpvj4.jpg",
-  "category": "stock5",
-  "prices": [
-    
-   {"quantity": 10, "price": 500},
-    {"quantity": 50, "price": 2500},
-    {"quantity": 100, "price": 4000},
+    {"quantity": 100, "price": 40000},
     {"quantity": 1000, "price": 0000}
   ]
 }
-   ]
-
+   
+{
+ 
