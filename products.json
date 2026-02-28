@@ -204,6 +204,56 @@
     {"quantity": 500, "price": 3400},
     {"quantity": 1000, "price": 5800}
   ]
+},
+   
+
+{
+  "id": 15,
+  "name": "OVULI STATIC",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/dzrfooy6a/video/upload/v1772291702/Ovuli_Static_hiplju.mp4",
+  "previewImage": "https://res.cloudinary.com/dzrfooy6a/image/upload/v1772291759/ovuli_static_foto_szmldu.png",
+  "category": "stock2",
+  "prices": [
+    
+   {"quantity": 10, "price": 130},
+    {"quantity": 50, "price": 600},
+    {"quantity": 100, "price": 1100},
+    {"quantity": 1000, "price": 9200}
+  ]
+},
+   
+
+{
+  "id": 16,
+  "name": "ICE WPFF 70U GRAPE GAS",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/dzrfooy6a/image/upload/v1772291773/ICE3_nlnk5l.jpg",
+  "previewImage": "https://res.cloudinary.com/dzrfooy6a/image/upload/v1772291773/ICE3_nlnk5l.jpg",
+  "category": "stock5",
+  "prices": [
+    
+   {"quantity": 10, "price": 500},
+    {"quantity": 50, "price": 2500},
+    {"quantity": 100, "price": 40000},
+    {"quantity": 1000, "price": 0000}
+  ]
+},
+   
+{
+  "id": 17,
+  "name": "ICE WPFF 70U PEACH MINTZ",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/dzrfooy6a/image/upload/v1772291773/ICE4_bkpvj4.jpg",
+  "previewImage": "https://res.cloudinary.com/dzrfooy6a/image/upload/v1772291773/ICE4_bkpvj4.jpg",
+  "category": "stock5",
+  "prices": [
+    
+   {"quantity": 10, "price": 500},
+    {"quantity": 50, "price": 2500},
+    {"quantity": 100, "price": 40000},
+    {"quantity": 1000, "price": 0000}
+  ]
 }
    ]
 
