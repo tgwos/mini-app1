@@ -30,10 +30,57 @@ box-sizing:border-box;
 }
 
 body{
+
 margin:0;
-background:var(--bg);
+
 color:var(--text);
+
 font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,sans-serif;
+
+background:#050505;
+
+overflow-x:hidden;
+
+}
+
+/* SFONDO ANIMATO */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:-50%;
+
+background:
+
+radial-gradient(circle at 20% 20%, rgba(255,0,0,0.25), transparent 40%),
+radial-gradient(circle at 80% 30%, rgba(255,0,0,0.18), transparent 40%),
+radial-gradient(circle at 50% 80%, rgba(255,0,0,0.15), transparent 50%);
+
+filter:blur(120px);
+
+animation:bgMove 18s linear infinite;
+
+z-index:-1;
+
+}
+
+@keyframes bgMove{
+
+0%{
+transform:translate(0,0);
+}
+
+50%{
+transform:translate(-10%,5%);
+}
+
+100%{
+transform:translate(0,0);
+}
+
 }
 
 .container{
