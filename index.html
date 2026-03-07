@@ -4,544 +4,495 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
 <title>Gas Cloud</title>
 
-<script src="https://telegram.org/js/telegram-web-app.js?v=6"></script>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
 
 <style>
 
 :root{
-
---bg:#0e0e11;
---card:#151518;
---border:#ff1a1a;
---text:#ffffff;
---sub:#9b9ba1;
-
---radius:22px;
-
+--red:#ff1a1a;
+--dark:#050505;
+--card:#111;
+--gray:#9b9b9b;
 }
 
 *{
 box-sizing:border-box;
--webkit-tap-highlight-color:transparent;
 }
 
 body{
 
 margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",Segoe UI;
 
-color:var(--text);
+color:white;
 
-font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,sans-serif;
-
-background:#050505;
+background:black;
 
 overflow-x:hidden;
 
 }
 
-/* SFONDO ANIMATO */
+/* SMOKE BACKGROUND */
 
-body::before{
+.smoke{
 
-content:"";
+position:fixed;
+inset:0;
+
+background:url("https://i.imgur.com/8QZ7Z3K.png");
+
+background-size:cover;
+
+opacity:.35;
+
+mix-blend-mode:screen;
+
+animation:smokeMove 60s linear infinite;
+
+z-index:-3;
+
+}
+
+@keyframes smokeMove{
+
+0%{transform:scale(1) translateY(0)}
+50%{transform:scale(1.3) translateY(-40px)}
+100%{transform:scale(1) translateY(0)}
+
+}
+
+/* RED ENERGY */
+
+.energy{
 
 position:fixed;
 
-inset:-50%;
+inset:-40%;
 
 background:
 
-radial-gradient(circle at 20% 20%, rgba(255,0,0,0.25), transparent 40%),
-radial-gradient(circle at 80% 30%, rgba(255,0,0,0.18), transparent 40%),
-radial-gradient(circle at 50% 80%, rgba(255,0,0,0.15), transparent 50%);
+radial-gradient(circle at 30% 30%,rgba(255,0,0,.35),transparent 40%),
+radial-gradient(circle at 70% 60%,rgba(255,0,0,.2),transparent 40%);
 
-filter:blur(120px);
+filter:blur(140px);
 
-animation:bgMove 18s linear infinite;
+animation:move 18s linear infinite;
 
+z-index:-2;
+
+}
+
+@keyframes move{
+
+0%{transform:translate(0,0)}
+50%{transform:translate(-10%,5%)}
+100%{transform:translate(0,0)}
+
+}
+
+/* PARTICLES */
+
+canvas{
+
+position:fixed;
+inset:0;
 z-index:-1;
 
 }
 
-@keyframes bgMove{
+/* HERO */
 
-0%{
-transform:translate(0,0);
-}
+.hero{
 
-50%{
-transform:translate(-10%,5%);
-}
+text-align:center;
 
-100%{
-transform:translate(0,0);
-}
+padding:40px 20px;
 
 }
 
-.container{
-padding:20px 16px 140px;
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:26px;
-max-width:430px;
-margin:auto;
-}
+.hero img{
 
-/* LOGO */
+width:120px;
+height:120px;
 
-.header-logo{
-display:flex;
-justify-content:center;
-}
-
-.header-logo img{
-width:90px;
-height:90px;
 border-radius:50%;
-object-fit:cover;
-box-shadow:0 6px 30px rgba(0,0,0,.6);
-}
 
-/* LED BORDER ANIMATION */
+box-shadow:
 
-@keyframes ledBorder {
-
-0%{
-background-position:0% 50%;
-}
-
-100%{
-background-position:300% 50%;
-}
+0 0 25px red,
+0 0 70px rgba(255,0,0,.6);
 
 }
 
-/* PREVIEW */
+.hero h1{
 
-.preview-box{
-width:100%;
-overflow:hidden;
+letter-spacing:4px;
+
+margin:15px 0 5px;
+
+font-size:30px;
+
+text-shadow:
+
+0 0 15px red,
+0 0 40px red;
+
 }
 
-.preview-slider{
+.hero p{
+
+color:var(--gray);
+
+}
+
+/* SLIDER */
+
+.slider{
+
 display:flex;
-gap:14px;
+
+gap:16px;
+
 overflow:hidden;
+
+padding:20px;
+
 }
 
-.preview-slider::-webkit-scrollbar{
-display:none;
-}
+.slide{
 
-.preview-card{
-
-min-width:150px;
-height:150px;
+min-width:170px;
+height:170px;
 
 border-radius:20px;
 
 overflow:hidden;
 
-border:2px solid transparent;
-
-background:
-linear-gradient(var(--card),var(--card)) padding-box,
-linear-gradient(
-90deg,
-transparent,
-#ff1a1a,
-#ff4d4d,
-#ff1a1a,
-transparent
-) border-box;
-
-background-size:300% 100%;
-
-animation:ledBorder 4s linear infinite;
+border:1px solid rgba(255,0,0,.5);
 
 box-shadow:
-0 0 12px rgba(255,0,0,.3);
 
-pointer-events:none;
+0 0 18px rgba(255,0,0,.5);
 
 }
 
-.preview-card img{
+.slide img{
+
 width:100%;
 height:100%;
+
 object-fit:cover;
+
 }
 
 /* PANEL */
 
 .panel{
 
-width:100%;
+margin:0 18px 120px;
 
-border-radius:var(--radius);
+padding:24px;
 
-padding:20px;
+border-radius:24px;
 
-border:2px solid transparent;
+background:rgba(20,20,20,.7);
 
-background:
-linear-gradient(var(--card),var(--card)) padding-box,
-linear-gradient(
-90deg,
-transparent,
-#ff1a1a,
-#ff4d4d,
-#ff1a1a,
-transparent
-) border-box;
+backdrop-filter:blur(14px);
 
-background-size:300% 100%;
-
-animation:ledBorder 5s linear infinite;
+border:1px solid rgba(255,0,0,.4);
 
 box-shadow:
-0 0 14px rgba(255,0,0,.35);
+
+0 0 30px rgba(255,0,0,.35);
 
 }
 
 /* GRID */
 
 .grid{
+
 display:grid;
+
 grid-template-columns:1fr 1fr;
-gap:16px;
+
+gap:18px;
+
 }
 
-/* CARD CATALOGO */
+/* CATALOG */
 
-.card-catalog{
+.catalog{
 
 grid-column:1/-1;
 
-height:120px;
-
-border-radius:var(--radius);
-
 display:flex;
+
 align-items:center;
 
 gap:18px;
 
-padding:0 22px;
+padding:18px;
 
-cursor:pointer;
-
-border:2px solid transparent;
-
-background:
-linear-gradient(var(--card),var(--card)) padding-box,
-linear-gradient(
-90deg,
-transparent,
-#ff1a1a,
-#ff4d4d,
-#ff1a1a,
-transparent
-) border-box;
-
-background-size:300% 100%;
-
-animation:ledBorder 4s linear infinite;
-
-box-shadow:
-0 0 14px rgba(255,0,0,.4);
-
-}
-
-.card-catalog img{
-width:70px;
-height:70px;
-border-radius:50%;
-}
-
-.card-catalog span{
-flex:1;
-font-size:18px;
-font-weight:700;
-}
-
-/* SMALL CARDS */
-
-.card-small{
-
-height:120px;
-
-border-radius:var(--radius);
-
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-justify-content:center;
-
-gap:10px;
-
-cursor:pointer;
-
-border:2px solid transparent;
-
-background:
-linear-gradient(var(--card),var(--card)) padding-box,
-linear-gradient(
-90deg,
-transparent,
-#ff1a1a,
-#ff4d4d,
-#ff1a1a,
-transparent
-) border-box;
-
-background-size:300% 100%;
-
-animation:ledBorder 4s linear infinite;
-
-box-shadow:
-0 0 14px rgba(255,0,0,.35);
-
-}
-
-.card-small img{
-width:52px;
-height:52px;
-border-radius:50%;
-}
-
-.card-small span{
-font-size:12px;
-color:var(--sub);
-}
-
-/* POPUP */
-
-.popup-overlay{
-position:fixed;
-inset:0;
-background:rgba(0,0,0,.6);
-display:flex;
-align-items:center;
-justify-content:center;
-opacity:0;
-pointer-events:none;
-transition:.25s;
-}
-
-.popup-overlay.show{
-opacity:1;
-pointer-events:auto;
-}
-
-.popup-box{
-
-padding:24px;
+height:110px;
 
 border-radius:20px;
 
-text-align:center;
+background:#151515;
 
-border:2px solid transparent;
+border:1px solid rgba(255,0,0,.4);
 
-background:
-linear-gradient(var(--card),var(--card)) padding-box,
-linear-gradient(
-90deg,
-transparent,
-#ff1a1a,
-#ff4d4d,
-#ff1a1a,
-transparent
-) border-box;
+cursor:pointer;
 
-background-size:300% 100%;
+transition:.35s;
 
-animation:ledBorder 4s linear infinite;
+}
+  .catalog span{
+
+font-size:17px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+color:white;
+
+}
+
+.catalog:hover{
+
+transform:translateY(-6px);
 
 box-shadow:
-0 0 20px rgba(255,0,0,.4);
+
+0 0 18px red,
+0 0 40px rgba(255,0,0,.4);
 
 }
 
-.popup-title{
-font-size:16px;
-font-weight:700;
-margin-bottom:12px;
-}
-
-.popup-username{
-display:block;
-padding:12px;
-margin-top:8px;
-border-radius:14px;
-background:#1c1c20;
-color:white;
-text-decoration:none;
-}
-
-/* BOTTOM BAR */
-
-.bottom-bar{
-
-position:fixed;
-
-bottom:14px;
-left:14px;
-right:14px;
-
-height:72px;
-
-display:flex;
-
-justify-content:space-around;
-align-items:center;
-
-border-radius:26px;
-
-border:2px solid transparent;
-
-background:
-linear-gradient(var(--card),var(--card)) padding-box,
-linear-gradient(
-90deg,
-transparent,
-#ff1a1a,
-#ff4d4d,
-#ff1a1a,
-transparent
-) border-box;
-
-background-size:300% 100%;
-
-animation:ledBorder 6s linear infinite;
-
-}
-
-.bottom-bar a{
-
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-gap:4px;
-
-font-size:11px;
-
-font-weight:600;
-
-color:#ff1a1a;
-
-text-decoration:none;
-
-transition:.2s;
-
-}
-
-/* icone rosse */
-
-.bottom-bar svg{
-
-width:24px;
-height:24px;
-
-fill:#ff1a1a;
-stroke:#ff1a1a;
-
-}
-
-/* effetto pressione */
-
-.bottom-bar a:active{
-
-transform:scale(.9);
-
-}
-
-.bottom-bar svg{
-width:22px;
-height:22px;
-fill:currentColor;
-}
-
-/* FLOAT BUTTON */
-
-.createby-fab{
-
-position:fixed;
-
-right:18px;
+.catalog img{
 
 width:60px;
 height:60px;
 
 border-radius:50%;
 
+}
+
+/* SMALL CARDS */
+
+.card{
+
+height:110px;
+
 display:flex;
+
+flex-direction:column;
 
 align-items:center;
 justify-content:center;
 
-border:2px solid transparent;
+border-radius:20px;
 
-background:
-linear-gradient(var(--card),var(--card)) padding-box,
-linear-gradient(
-90deg,
-transparent,
-#ff1a1a,
-#ff4d4d,
-#ff1a1a,
-transparent
-) border-box;
+background:#141414;
 
-background-size:300% 100%;
+border:1px solid rgba(255,0,0,.4);
 
-animation:ledBorder 4s linear infinite;
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
 
 box-shadow:
-0 0 20px rgba(255,0,0,.45);
+
+0 0 18px red,
+0 0 40px rgba(255,0,0,.4);
 
 }
 
-.createby-fab img{
-width:42px;
-height:42px;
+.card img{
+
+width:46px;
+height:46px;
+
 border-radius:50%;
+
+margin-bottom:8px;
+
 }
 
-.createby-tooltip{
-
-position:absolute;
-
-right:74px;
-
-top:50%;
-
-transform:translateY(-50%);
-
-background:var(--card);
-
-border:1px solid #ff1a1a;
-
-padding:10px 14px;
-
-border-radius:14px;
+.card span{
 
 font-size:11px;
 
-white-space:nowrap;
+font-weight:600;
+
+letter-spacing:1.8px;
+
+text-transform:uppercase;
+
+color:#d0d0d0;
+
+margin-top:4px;
+
+text-align:center;
+
+}
+
+/* BOTTOM BAR */
+
+.bottom{
+
+position:fixed;
+
+bottom:16px;
+left:16px;
+right:16px;
+
+height:70px;
+
+display:flex;
+align-items:center;
+justify-content:space-around;
+
+border-radius:24px;
+
+background:rgba(20,20,20,.85);
+
+backdrop-filter:blur(14px);
+
+border:1px solid rgba(255,0,0,.5);
+
+box-shadow:
+
+0 0 20px rgba(255,0,0,.4);
+
+}
+
+.bottom a{
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+gap:4px;
+
+font-size:10px;
+
+font-weight:600;
+
+letter-spacing:1.4px;
+
+text-transform:uppercase;
+
+color:#ff1a1a;
+
+text-decoration:none;
+
+}
+
+.bottom svg{
+width:22px;
+height:22px;
+fill:#ff1a1a;
+}
+
+/* POPUP */
+
+.popup{
+
+position:fixed;
+inset:0;
+
+background:rgba(0,0,0,.7);
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+opacity:0;
+pointer-events:none;
+
+transition:.25s;
+
+}
+
+.popup.show{
+
+opacity:1;
+pointer-events:auto;
+
+}
+
+.popup-box{
+
+background:#181818;
+
+padding:25px;
+
+border-radius:20px;
+
+border:1px solid rgba(255,0,0,.6);
+
+box-shadow:
+
+0 0 30px red;
+
+text-align:center;
+
+}
+
+.popup-box a{
+
+display:block;
+
+margin-top:10px;
+
+background:#222;
+
+padding:12px;
+
+border-radius:12px;
+
+text-decoration:none;
+
+color:white;
+
+}
+  .fixed-logo{
+
+position:fixed;
+
+top:14px;
+left:50%;
+
+transform:translateX(-50%);
+
+z-index:999;
+
+}
+
+.fixed-logo img{
+
+width:60px;
+height:60px;
+
+border-radius:50%;
+
+box-shadow:
+
+0 0 15px red,
+0 0 40px rgba(255,0,0,.6);
 
 }
 
@@ -549,89 +500,90 @@ white-space:nowrap;
 </head>
 
 <body>
+<div class="smoke"></div>
+<div class="energy"></div>
 
-<div class="container">
+<canvas id="particles"></canvas>
 
-<div class="header-logo">
+<div class="hero">
+
 <img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
+
+<h1>GAS CLOUD</h1>
+
 </div>
 
-<div class="preview-box">
-<div id="preview-slider" class="preview-slider"></div>
-</div>
+<div id="slider" class="slider"></div>
 
 <div class="panel">
 
 <div class="grid">
 
-<div class="card-catalog" onclick="location.href='catalog.html'">
+<div class="catalog" onclick="location.href='catalog.html'">
+
 <img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
+
 <span>CATALOGO</span>
+
 </div>
 
-<div class="card-small"
-onclick="openPopup(
-'CONTACT',
-'📨 Telegram: @GasCloud2',
-'https://t.me/GasCloud2',
-'📞 Signal',
-'https://signal.me/#eu/CgfgU9UgZDG_PkIW19RZU90SY6WyRcInKywqHGpPorTDNai1pUFDc67sIUINOKeJ'
-)">
+<div class="card" onclick="openPopup('CONTACT','@GasCloud2','https://t.me/GasCloud2')">
 <img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
-<span>CONTACTS</span>
+<span>CONTACT</span>
 </div>
 
-<div class="card-small"
-onclick="openPopup(
-'CHANNEL',
-'📢 Telegram: GASCLOUDPRIVE',
-'https://t.me/+iMgIPdF4HPswMDRh',
-'📞 Signal',
-'https://signal.group/#CjQKIDujiZdq6QYIPqOVMwE8I2utpG27IFlHr3NcGuX9rg7nEhB5oZDrOOzWhaoX4bTSIZ4W'
-)">
+<div class="card" onclick="openPopup('CHANNEL','GASCLOUDPRIVE','https://t.me/+iMgIPdF4HPswMDRh')">
 <img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
-<span>CHANNELS</span>
+<span>CHANNEL</span>
 </div>
 
-<div class="card-small"
-onclick="openPopup(
-'CREATED BY',
-'👨‍💻 BOX CREATE',
-'https://t.me/boxcreate22'
-)">
+<div class="card" onclick="openPopup('CREATED BY','BOX CREATE','https://t.me/boxcreate22')">
 <img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
-<span>CREATED BY</span>
+<span>CREATOR</span>
 </div>
 
-<div class="card-small">
+<div class="card">
 <img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
 <span>NEWS</span>
 </div>
 
 </div>
-</div>
+
 </div>
 
-<div id="popup" class="popup-overlay" onclick="closePopup()">
+<div id="popup" class="popup" onclick="closePopup()">
+
 <div class="popup-box" onclick="event.stopPropagation()">
-<div class="popup-title" id="popup-title"></div>
-<a class="popup-username" id="popup-link-telegram"></a>
-<a class="popup-username" id="popup-link-signal" style="display:none;"></a>
-</div>
+
+<h3 id="ptitle"></h3>
+
+<a id="plink"></a>
+
 </div>
 
-<div class="bottom-bar">
+</div>
+
+<div class="bottom">
 
 <a onclick="tg.openLink('https://t.me/GasCloud2')">
-Telegram
+<svg viewBox="0 0 24 24">
+<path d="M9.04 15.47l-.39 5.5c.56 0 .8-.24 1.08-.52l2.6-2.48 5.38 3.94c.99.55 1.69.26 1.94-.92l3.52-16.5c.33-1.52-.55-2.12-1.51-1.76L1.48 9.2c-1.46.57-1.44 1.38-.25 1.75l5.5 1.72L19.42 4.7c.6-.4 1.15-.18.7.22"/>
+</svg>
+<span>Telegram</span>
 </a>
 
-<a onclick="tg.openLink('https://www.instagram.com/gascloud11')">
-Instagram
+<a onclick="tg.openLink('https://instagram.com/gascloud11')">
+<svg viewBox="0 0 24 24">
+<path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 5.5A4.5 4.5 0 1016.5 12 4.5 4.5 0 0012 7.5zm6.5-.9a1.1 1.1 0 11-1.1-1.1 1.1 1.1 0 011.1 1.1z"/>
+</svg>
+<span>Instagram</span>
 </a>
 
 <a onclick="tg.openLink('https://signal.me')">
-Signal
+<svg viewBox="0 0 24 24">
+<path d="M12 2a10 10 0 100 20 9.8 9.8 0 004.9-1.3l4.1 1.1-1.1-4.1A10 10 0 0012 2z"/>
+</svg>
+<span>Signal</span>
 </a>
 
 </div>
@@ -642,110 +594,143 @@ const tg = window.Telegram.WebApp;
 tg.ready();
 tg.expand();
 
-</script>
+/* POPUP */
 
-<script>
+function openPopup(title,text,url){
 
-const popup = document.getElementById("popup");
-const popupTitle = document.getElementById("popup-title");
-const popupTelegram = document.getElementById("popup-link-telegram");
-const popupSignal = document.getElementById("popup-link-signal");
+document.getElementById("ptitle").innerText=title;
 
-function openPopup(title,tgText,tgUrl,signalText,signalUrl){
+let link=document.getElementById("plink");
 
-popupTitle.innerText = title;
+link.innerText=text;
 
-popupTelegram.innerText = tgText;
-popupTelegram.onclick = ()=>tg.openLink(tgUrl);
-popupTelegram.style.display="block";
+link.onclick=()=>tg.openLink(url);
 
-if(signalText && signalUrl){
-popupSignal.innerText = signalText;
-popupSignal.onclick = ()=>tg.openLink(signalUrl);
-popupSignal.style.display="block";
-}else{
-popupSignal.style.display="none";
-}
-
-popup.classList.add("show");
+document.getElementById("popup").classList.add("show");
 
 }
 
 function closePopup(){
-popup.classList.remove("show");
+
+document.getElementById("popup").classList.remove("show");
+
 }
 
-</script>
+/* PRODUCTS */
 
-<script>
+async function load(){
 
-let productsData = [];
+let res=await fetch("products.json");
 
-async function loadProducts(){
+let data=await res.json();
 
-const res = await fetch("products.json");
-productsData = await res.json();
+let slider=document.getElementById("slider");
 
-const slider = document.getElementById("preview-slider");
+data.forEach(p=>{
 
-productsData.forEach(product => {
+let div=document.createElement("div");
 
-const card = document.createElement("div");
-card.className = "preview-card";
+div.className="slide";
 
-card.innerHTML = `
-<img src="${product.previewImage}">
-`;
+div.innerHTML=`<img src="${p.previewImage}">`;
 
-slider.appendChild(card);
+slider.appendChild(div);
 
 });
 
-duplicateSlider();
-startSlider();
+duplicate();
+
+scroll();
 
 }
 
-function duplicateSlider(){
+function duplicate(){
 
-const slider = document.getElementById("preview-slider");
+let slider=document.getElementById("slider");
 
-const cards = [...slider.children];
+[...slider.children].forEach(el=>{
 
-cards.forEach(card=>{
-const clone = card.cloneNode(true);
-slider.appendChild(clone);
+slider.appendChild(el.cloneNode(true));
+
 });
 
 }
 
-function startSlider(){
+function scroll(){
 
-const slider = document.getElementById("preview-slider");
+let slider=document.getElementById("slider");
 
-let speed = 0.35;
+function anim(){
 
-function animate(){
+slider.scrollLeft+=0.4;
 
-slider.scrollLeft += speed;
+if(slider.scrollLeft>=slider.scrollWidth/2){
 
-if(slider.scrollLeft >= slider.scrollWidth/2){
-slider.scrollLeft = 0;
-}
-
-requestAnimationFrame(animate);
+slider.scrollLeft=0;
 
 }
 
-animate();
+requestAnimationFrame(anim);
 
 }
 
-loadProducts();
+anim();
+
+}
+
+load();
+
+/* PARTICLES */
+
+const canvas=document.getElementById("particles");
+
+const ctx=canvas.getContext("2d");
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+let particles=[];
+
+for(let i=0;i<80;i++){
+
+particles.push({
+
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+r:Math.random()*2+1,
+v:Math.random()*0.4+0.1
+
+});
+
+}
+
+function draw(){
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+ctx.fillStyle="rgba(255,0,0,.8)";
+
+particles.forEach(p=>{
+
+ctx.beginPath();
+
+ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+
+ctx.fill();
+
+p.y-=p.v;
+
+if(p.y<0)p.y=canvas.height;
+
+});
+
+requestAnimationFrame(draw);
+
+}
+
+draw();
 
 </script>
-
-
 
 </body>
 </html>
