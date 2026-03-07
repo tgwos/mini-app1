@@ -1,157 +1,270 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <title>Gas Cloud – Catalogo</title>
 
 <script src="https://telegram.org/js/telegram-web-app.js?v=6"></script>
 
 <style>
+
 :root{
-  --red:#ff1a1a;
-  --bg:#0b0b0b;
+--red:#ff1a1a;
+--dark:#050505;
 }
 
-/* RESET */
 *{
-  box-sizing:border-box;
-  -webkit-tap-highlight-color:transparent;
+box-sizing:border-box;
+-webkit-tap-highlight-color:transparent;
 }
 
 body{
-  margin:0;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-  color:#fff;
-  background:var(--bg);
+
+margin:0;
+
+font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,sans-serif;
+
+color:#fff;
+
+background:#050505;
+
+overflow-x:hidden;
+
+}
+
+/* BACKGROUND ROSSO ANIMATO */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:-50%;
+
+background:
+
+radial-gradient(circle at 20% 20%, rgba(255,0,0,0.25), transparent 40%),
+radial-gradient(circle at 80% 30%, rgba(255,0,0,0.18), transparent 40%),
+radial-gradient(circle at 50% 80%, rgba(255,0,0,0.15), transparent 50%);
+
+filter:blur(120px);
+
+animation:bgMove 18s linear infinite;
+
+z-index:-1;
+
+}
+
+@keyframes bgMove{
+
+0%{transform:translate(0,0);}
+50%{transform:translate(-10%,5%);}
+100%{transform:translate(0,0);}
+
 }
 
 /* BACK BUTTON */
+
 .back{
-  position:fixed;
-  top:calc(12px + env(safe-area-inset-top));
-  left:12px;
-  z-index:10;
-  padding:10px 14px;
-  font-size:13px;
-  font-weight:800;
-  border-radius:14px;
-  background:#050505;
-  border:1px solid var(--red);
-  cursor:pointer;
+
+position:fixed;
+
+top:calc(12px + env(safe-area-inset-top));
+left:12px;
+
+z-index:20;
+
+padding:10px 14px;
+
+font-size:12px;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+border-radius:14px;
+
+background:#141414;
+
+border:1px solid rgba(255,0,0,.6);
+
+cursor:pointer;
+
 }
 
 /* CONTAINER */
+
 .container{
-  padding:80px 20px 40px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:22px;
+
+padding:90px 20px 40px;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+
+gap:24px;
+
 }
 
-/* HEADER 
-.header-panel{
-  width:100%;
-  max-width:420px;
-  background:#070707;
-  border-radius:22px;
-  padding:20px 18px;
-  text-align:center;
-  border:1px solid rgba(255,255,255,.06);
-}*/
-  .bubble{
-  width:100%;
-  max-width:420px;
-  background:linear-gradient(180deg,#240000,#050505);
-  border:1px solid var(--red);
-  border-radius:22px;
-  padding:22px;
-  text-align:center;
-  font-size:22px;
-  font-weight:900;
-  letter-spacing:4px;
-  text-transform:uppercase;
+/* HEADER BUBBLE */
+
+.bubble{
+
+width:100%;
+max-width:420px;
+
+border-radius:22px;
+
+padding:20px;
+
+background:rgba(20,20,20,.8);
+
+backdrop-filter:blur(10px);
+
+border:1px solid rgba(255,0,0,.5);
+
+font-size:22px;
+
+font-weight:900;
+
+letter-spacing:4px;
+
+text-transform:uppercase;
+
+text-align:center;
+
+box-shadow:
+0 0 20px rgba(255,0,0,.25);
+
 }
 
 .bubble::after{
-  content:"Choose a stock category";
-  display:block;
-  margin-top:8px;
-  font-size:11px;
-  letter-spacing:2px;
-  opacity:.7;
-}
 
-.header-panel h1{
-  margin:0;
-  font-size:22px;
-  font-weight:900;
-  letter-spacing:3px;
-  text-transform:uppercase;
-}
+content:"Choose a stock category";
 
-.header-panel p{
-  margin:8px 0 0;
-  font-size:13px;
-  letter-spacing:1px;
-  opacity:.65;
+display:block;
+
+margin-top:8px;
+
+font-size:11px;
+
+letter-spacing:2px;
+
+opacity:.7;
+
 }
 
 /* PANEL */
+
 .panel{
-  width:100%;
-  max-width:420px;
-  background:#050505;
-  border-radius:26px;
-  padding:22px;
-  border:1px solid rgba(255,255,255,.06);
+
+width:100%;
+max-width:420px;
+
+border-radius:26px;
+
+padding:22px;
+
+background:rgba(20,20,20,.8);
+
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,0,0,.5);
+
+box-shadow:
+0 0 25px rgba(255,0,0,.25);
+
 }
 
 /* GRID */
+
 .grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:16px;
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:16px;
+
 }
 
-/* STOCK CARD – STILE INDEX */
+/* CARD */
+
 .stock-card{
-  aspect-ratio:1/1;
-  border-radius:22px;
-  background:#050505;
-  border:1px solid rgba(255,0,0,.5);
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:14px;
-  cursor:pointer;
+
+aspect-ratio:1/1;
+
+border-radius:22px;
+
+background:#141414;
+
+border:1px solid rgba(255,0,0,.5);
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+gap:14px;
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+.stock-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+0 0 18px red,
+0 0 40px rgba(255,0,0,.35);
+
 }
 
 .stock-card img{
-  width:64px;
-  height:64px;
-  border-radius:50%;
+
+width:64px;
+height:64px;
+
+border-radius:50%;
+
 }
 
 .stock-card span{
-  padding:6px 14px;
-  border-radius:10px;
-  font-size:12px;
-  font-weight:900;
-  letter-spacing:1.4px;
-  text-transform:uppercase;
-  border:1px solid var(--red);
-  background:#0a0a0a;
-  text-align:center;
+
+font-size:11px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+color:#e6e6e6;
+
+text-align:center;
+
 }
 
 /* SMALL SCREENS */
+
 @media(max-width:360px){
-  .stock-card span{font-size:11px;}
+
+.stock-card span{
+font-size:10px;
 }
+
+}
+
 </style>
+
 </head>
 
 <body>
@@ -160,65 +273,92 @@ body{
 
 <div class="container">
 
-  <div class="bubble">Catalogo</div>
+<div class="bubble">Catalogo</div>
 
-  <div class="panel">
-    <div class="grid">
+<div class="panel">
 
-      <!-- PROMO FIRST -->
-      <div class="stock-card" onclick="openStock('stock-4.html')">
-        <img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
-        <span>PROMO</span>
-      </div>
+<div class="grid">
 
-      <div class="stock-card" onclick="openStock('stock-1.html')">
-        <img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
-        <span>DRY</span>
-      </div>
+<!-- PROMO -->
 
-      <div class="stock-card" onclick="openStock('stock-2.html')">
-        <img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
-        <span>FROZEN</span>
-      </div>
+<div class="stock-card" onclick="openStock('stock-4.html')">
+<img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
+<span>PROMO</span>
+</div>
 
-      <div class="stock-card" onclick="openStock('stock-3.html')">
-        <img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
-        <span>CALI</span>
-      </div>
+<!-- DRY -->
 
-      <div class="stock-card" onclick="openStock('stock-5.html')">
-        <img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
-        <span>ICE/ESTRATTI</span>
-      </div>
+<div class="stock-card" onclick="openStock('stock-1.html')">
+<img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
+<span>DRY</span>
+</div>
 
-      <div class="stock-card" onclick="openStock('stock-6.html')">
-        <img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
-        <span>PEN THC</span>
-      </div>
+<!-- FROZEN -->
 
-    </div>
-  </div>
+<div class="stock-card" onclick="openStock('stock-2.html')">
+<img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
+<span>FROZEN</span>
+</div>
+
+<!-- CALI -->
+
+<div class="stock-card" onclick="openStock('stock-3.html')">
+<img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
+<span>CALI</span>
+</div>
+
+<!-- ICE -->
+
+<div class="stock-card" onclick="openStock('stock-5.html')">
+<img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
+<span>ICE / ESTRATTI</span>
+</div>
+
+<!-- PEN -->
+
+<div class="stock-card" onclick="openStock('stock-6.html')">
+<img src="https://tgwos.github.io/mini-app1/4985865506745158660.jpg">
+<span>PEN THC</span>
+</div>
+
+</div>
+
+</div>
 
 </div>
 
 <script>
+
 const tg = window.Telegram.WebApp;
+
 tg.ready();
+
 tg.expand();
 
+/* TELEGRAM BACK BUTTON */
+
 tg.BackButton.show();
+
 tg.BackButton.onClick(goBack);
 
 function goBack(){
-  tg.BackButton.hide();
-  location.href = "index.html";
+
+tg.BackButton.hide();
+
+location.href = "index.html";
+
 }
 
-function openStock(p){
-  tg.BackButton.hide();
-  location.assign(p);
+function openStock(page){
+
+tg.BackButton.hide();
+
+location.assign(page);
+
 }
+
 </script>
 
 </body>
+
 </html>
