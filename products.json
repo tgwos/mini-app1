@@ -205,10 +205,58 @@
     {"quantity": 1000, "price": 5800}
   ]
 },
-   
 
 {
   "id": 15,
+  "name": "TROPCHERRY STATIC ",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773226460/STATIC_TROPCHERRY_u7aw4f.mp4",
+  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773226457/STATIC_TROPCHERRY_fb7t0d.png",
+  "category": "stock2",
+  "prices": [
+    
+   {"quantity": 10, "price": 150},
+    {"quantity": 50, "price": 650},
+    {"quantity": 100, "price": 1100},
+     {"quantity": 500, "price": 4900},
+    {"quantity": 1000, "price": 8900}
+  ]
+},
+  
+{
+  "id": 16,
+  "name": "FROZEN CRIME ",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773226452/FROZEN_CRIME_h5m8ct.mp4",
+  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773226451/FROZEN_CRIME_ytq3en.png",
+  "category": "stock2",
+  "prices": [
+    
+   {"quantity": 10, "price": 100},
+    {"quantity": 50, "price": 400},
+    {"quantity": 100, "price": 600},
+    {"quantity": 1000, "price": 5500}
+  ]
+},
+  
+{
+  "id": 17,
+  "name": "FRUITTELLA 90U PREMIUM ",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773226074/FRUITTELLA_k6s6a8.mp4",
+  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773226116/FRUITTELLA_dncve5.png",
+  "category": "stock2",
+  "prices": [
+    
+   {"quantity": 10, "price": 150},
+    {"quantity": 50, "price": 750},
+    {"quantity": 100, "price": 1400},
+    {"quantity": 1000, "price": 13000}
+  ]
+},
+  
+{
+  "id": 18,
   "name": "OVULI STATIC",
   "mediaType": "video",
   "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773225143/Ovuli_Static_ffo0nw.mp4",
@@ -224,7 +272,7 @@
 },
   
   {
-    "id": 16,
+    "id": 19,
     "name": "ICE WPFF 70U PEACH MINTZ - GRAPE GAS",
     "mediaType": "video",
     "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773223460/ICE_ewcvom.mp4",
