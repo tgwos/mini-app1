@@ -45,28 +45,28 @@
 },
 {
   "id": 4,
-  "name": "CALI LIME MINTZ",
+  "name": "CALI SUPER BOOF CHERRY",
   "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1769179923/LIME_MINTZ_ckdcpx.mp4",
-  "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769180042/LIME_MINTZ_iuoo8o.png",
-  "category": "stock",
+  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773225673/CALI_SUPER_BOOF_CHERRY_avircp.mp4",
+  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773225663/SUPER_BOOF_CHERRY_f6uqtr.png",
+  "category": "stock3",
   "prices": [
     {"quantity": 50, "price": 400},
-    {"quantity": 100, "price": 550},
+    {"quantity": 100, "price": 600},
     {"quantity": 500, "price": 2500},
     {"quantity": 1000, "price": 4500}
   ]
 },
 {
   "id": 5,
-  "name": "CALI BLUE RUNTZ",
+  "name": "CALI RUNTZ",
   "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1769182307/CALI_BLUE_RUNTZ_egfvka.mp4",
-  "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769182368/CALI_BLUE_RUNTZ_nbka1j.png",
-  "category": "stock",
+  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773225705/CALI_RUNTZ_owe9uf.mp4",
+  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773225699/CALI_RUNTZ_oosmpq.png",
+  "category": "stock3",
   "prices": [
     {"quantity": 50, "price": 400},
-    {"quantity": 100, "price": 550},
+    {"quantity": 100, "price": 600},
     {"quantity": 500, "price": 2500},
     {"quantity": 1000, "price": 4500}
   ]
@@ -88,16 +88,16 @@
   
 {
   "id": 7,
-  "name": "FULL MELT FROZEN 120U PLASMA STATIC",
+  "name": "FULL MELT FROZEN 120U PLASMA STATIC 4 STRAIN",
   "mediaType": "video",
   "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773223461/FULL_MELT_FROZEN_PLASMASTATIC_keioxe.mp4",
   "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773223454/full_melt_120_u_frozen_yxmbx3.png",
   "category": "stock2",
   "prices": [
-    {"quantity": 50, "price": 490},
-    {"quantity": 100, "price": 900},
-    {"quantity": 500, "price": 4100},
-    {"quantity": 1000, "price": 7900}
+    {"quantity": 50, "price": 450},
+    {"quantity": 100, "price": 800},
+    {"quantity": 500, "price": 3200},
+    {"quantity": 1000, "price": 6500}
   ]
 },
    
