@@ -142,10 +142,10 @@
   "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773223455/CALI_USA_TOP_yrlo8e.png",
   "category": "stock3",
   "prices": [
-    {"quantity": 50, "price": 420},
-    {"quantity": 100, "price": 650},
-    {"quantity": 500, "price": 3000},
-    {"quantity": 1000, "price": 5500}
+    {"quantity": 50, "price": 400},
+    {"quantity": 100, "price": 600},
+    {"quantity": 500, "price": 2700},
+    {"quantity": 1000, "price": 5000}
   ]
 },
    
@@ -185,7 +185,7 @@
   "mediaType": "video",
   "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773223455/bluezushi_top_filtered_190-73u_bjyiqk.mp4",
   "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773223454/bluezushi_nphexx.png",
-  "category": "stock4",
+  "category": "stock",
   "prices": [
     
     {"quantity": 100, "price": 500},
@@ -199,7 +199,7 @@
   "mediaType": "video",
   "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773223455/Alien_Zkittlez_Top_Filtered_190-73u_qc9f5r.mp4",
   "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773223454/ALIEN_g1forn.png",
-  "category": "stock4",
+  "category": "stock",
   "prices": [
     
     {"quantity": 100, "price": 500},
@@ -252,9 +252,9 @@
   "prices": [
     
    {"quantity": 10, "price": 150},
-    {"quantity": 50, "price": 750},
-    {"quantity": 100, "price": 1400},
-    {"quantity": 1000, "price": 13000}
+    {"quantity": 50, "price": 700},
+    {"quantity": 100, "price": 1300},
+    {"quantity": 1000, "price": 12000}
   ]
 },
   
@@ -270,7 +270,7 @@
    {"quantity": 10, "price": 130},
     {"quantity": 50, "price": 600},
     {"quantity": 100, "price": 1100},
-    {"quantity": 1000, "price": 9200}
+    {"quantity": 1000, "price": 8800}
   ]
 },
   
@@ -284,8 +284,8 @@
     "prices": [
       {"quantity": 10, "price": 500},
       {"quantity": 50, "price": 2500},
-      {"quantity": 100, "price": 40000},
-      {"quantity": 1000, "price": 0}
+      {"quantity": 100, "price": 40000}
+     
     ]
   }
 ]
