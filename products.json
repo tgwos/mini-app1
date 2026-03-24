@@ -313,9 +313,39 @@
     {"quantity": 1000, "price": 12000}
   ]
 },
-  
+
 {
   "id": 21,
+  "name": "OVULETTI STATIC DA 5G",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1774394067/ovuli_static_5g_mvmdoj.mp4",
+  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1774394336/OVULI_STATIC_5G_ffbhr3.png",
+  "category": "stock4",
+  "prices": [
+    {"quantity": 50, "price": 500},
+    {"quantity": 100, "price": 900},
+    {"quantity": 500, "price": 3750},
+    {"quantity": 1000, "price": 0}
+  ]
+},
+
+{
+  "id": 22,
+  "name": "OVULETTI STATIC DA 5G",
+  "mediaType": "video",
+  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1774394067/ovuli_static_5g_mvmdoj.mp4",
+  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1774394336/OVULI_STATIC_5G_ffbhr3.png",
+  "category": "stock2",
+  "prices": [
+    {"quantity": 50, "price": 500},
+    {"quantity": 100, "price": 900},
+    {"quantity": 500, "price": 3750},
+    {"quantity": 1000, "price": 0}
+  ]
+},
+  
+{
+  "id": 23,
   "name": "OVULI STATIC",
   "mediaType": "video",
   "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773225143/Ovuli_Static_ffo0nw.mp4",
@@ -331,7 +361,7 @@
 },
   
   {
-    "id": 22,
+    "id": 24,
     "name": "ICE WPFF 70U PEACH MINTZ - GRAPE GAS",
     "mediaType": "video",
     "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773223460/ICE_ewcvom.mp4",
