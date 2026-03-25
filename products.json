@@ -70,7 +70,7 @@
   "category": "stock3",
   "prices": [
     {"quantity": 50, "price": 280},
-    {"quantity": 100, "price": 460},
+    {"quantity": 100, "price": 480},
     {"quantity": 500, "price": 1900},
     {"quantity": 1000, "price": 3600}
   ]
@@ -84,7 +84,7 @@
   "category": "stock4",
   "prices": [
     {"quantity": 50, "price": 280},
-    {"quantity": 100, "price": 460},
+    {"quantity": 100, "price": 480},
     {"quantity": 500, "price": 1900},
     {"quantity": 1000, "price": 3600}
   ]
@@ -98,8 +98,8 @@
   "category": "stock3",
   "prices": [
     {"quantity": 50, "price": 350},
-    {"quantity": 100, "price": 550},
-    {"quantity": 500, "price": 2300},
+    {"quantity": 100, "price": 580},
+    {"quantity": 500, "price": 2500},
     {"quantity": 1000, "price": 4200}
   ]
 },
@@ -112,8 +112,8 @@
   "category": "stock4",
   "prices": [
     {"quantity": 50, "price": 350},
-    {"quantity": 100, "price": 550},
-    {"quantity": 500, "price": 2300},
+    {"quantity": 100, "price": 580},
+    {"quantity": 500, "price": 2500},
     {"quantity": 1000, "price": 4200}
   ]
 },
@@ -126,8 +126,8 @@
   "category": "stock3",
   "prices": [
     {"quantity": 50, "price": 350},
-    {"quantity": 100, "price": 550},
-    {"quantity": 500, "price": 2300},
+    {"quantity": 100, "price": 580},
+    {"quantity": 500, "price": 2500},
     {"quantity": 1000, "price": 4200}
   ]
 },
@@ -140,8 +140,8 @@
   "category": "stock4",
   "prices": [
     {"quantity": 50, "price": 350},
-    {"quantity": 100, "price": 550},
-    {"quantity": 500, "price": 2300},
+    {"quantity": 100, "price": 580},
+    {"quantity": 500, "price": 2500},
     {"quantity": 1000, "price": 4200}
   ]
 },
