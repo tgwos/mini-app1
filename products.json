@@ -32,8 +32,8 @@
   "id": 3,
   "name": "FROZEN BASE",
   "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773223471/FROZEN_BASE_MUSICA_-_Realizzato_con_Clipchamp_dedfad.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773223454/FROZEN-BASE_q1tc1b.png",
+  "mediaUrl": "https://videodelivery.net/814f77432bc8b1410a890b8a97fa0075/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/98f11a67-9b03-454a-ff77-e8fb84b5ad00/public",
   "category": "stock2",
   "prices": [
     {"quantity": 25, "price": 200},
@@ -49,8 +49,8 @@
   "id": 4,
   "name": "FROZEN CRIME ",
   "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773226452/FROZEN_CRIME_h5m8ct.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773226451/FROZEN_CRIME_ytq3en.png",
+  "mediaUrl": "https://videodelivery.net/ba80d8b00951b03733f9b74afbed4b0c/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/abaaa997-3516-4524-b88a-e24536a40700/public",
   "category": "stock2",
   "prices": [
     
