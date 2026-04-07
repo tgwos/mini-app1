@@ -67,7 +67,7 @@
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/e3aaf2f1cc87c06708771112824be4a7/manifest/video.m3u8",
   "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/079212ff-29c4-41cb-5874-5dfb69435e00/public",
-  "category": "stock4",
+  "category": "stock3",
   "prices": [
     {"quantity": 50, "price": 300},
     {"quantity": 100, "price": 530},
