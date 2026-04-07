@@ -63,139 +63,69 @@
   
   {
   "id": 5,
-  "name": "CALISPAIN PURPLE X FRUITGRAPE",
+  "name": "GORILLA GLUE TOP CALI",
   "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773224409/CALI_GAS_CLOUD_xxxn0f.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773223455/CALI_SPAIN_GAS_v0detb.png",
-  "category": "stock3",
-  "prices": [
-    {"quantity": 50, "price": 280},
-    {"quantity": 100, "price": 480},
-    {"quantity": 500, "price": 1900},
-    {"quantity": 1000, "price": 3600}
-  ]
-},
-  {
-  "id": 6,
-  "name": "CALISPAIN PURPLE X FRUITGRAPE",
-  "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773224409/CALI_GAS_CLOUD_xxxn0f.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773223455/CALI_SPAIN_GAS_v0detb.png",
+  "mediaUrl": "https://videodelivery.net/e3aaf2f1cc87c06708771112824be4a7/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/079212ff-29c4-41cb-5874-5dfb69435e00/public",
   "category": "stock4",
   "prices": [
-    {"quantity": 50, "price": 280},
-    {"quantity": 100, "price": 480},
+    {"quantity": 50, "price": 300},
+    {"quantity": 100, "price": 530},
     {"quantity": 500, "price": 1900},
     {"quantity": 1000, "price": 3600}
   ]
 },
+{
+  "id": 6,
+  "name": "CALI SUPER BOOF CHERRY",
+  "mediaType": "video",
+  "mediaUrl": "https://videodelivery.net/1e2f116c41f025b2e7e8b4ce48b81913/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/26a29b8d-cd75-4de4-7fab-adedc5e8d300/public",
+  "category": "stock3",
+  "prices": [
+    {"quantity": 50, "price": 350},
+    {"quantity": 100, "price": 580},
+    {"quantity": 500, "price": 2500},
+    {"quantity": 1000, "price": 4200}
+  ]
+},
+
 {
   "id": 7,
-  "name": "CALI SUPER BOOF CHERRY",
+  "name": "CALI RUNTZ",
   "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773225673/CALI_SUPER_BOOF_CHERRY_avircp.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773225663/SUPER_BOOF_CHERRY_f6uqtr.png",
+  "mediaUrl": "https://videodelivery.net/92d033d7bce5678288f2a8a7904d593e/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/6f7ac844-d882-43bb-492f-506bf2a76d00/public",
   "category": "stock3",
   "prices": [
     {"quantity": 50, "price": 350},
     {"quantity": 100, "price": 580},
     {"quantity": 500, "price": 2500},
     {"quantity": 1000, "price": 4200}
-  ]
-},
-  {
-  "id": 8,
-  "name": "CALI SUPER BOOF CHERRY",
-  "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773225673/CALI_SUPER_BOOF_CHERRY_avircp.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773225663/SUPER_BOOF_CHERRY_f6uqtr.png",
-  "category": "stock4",
-  "prices": [
-    {"quantity": 50, "price": 350},
-    {"quantity": 100, "price": 580},
-    {"quantity": 500, "price": 2500},
-    {"quantity": 1000, "price": 4200}
-  ]
-},
-{
-  "id": 9,
-  "name": "CALI RUNTZ",
-  "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773225705/CALI_RUNTZ_owe9uf.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773225699/CALI_RUNTZ_oosmpq.png",
-  "category": "stock3",
-  "prices": [
-    {"quantity": 50, "price": 350},
-    {"quantity": 100, "price": 580},
-    {"quantity": 500, "price": 2500},
-    {"quantity": 1000, "price": 4200}
-  ]
-},
-  {
-  "id": 10,
-  "name": "CALI RUNTZ",
-  "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773225705/CALI_RUNTZ_owe9uf.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773225699/CALI_RUNTZ_oosmpq.png",
-  "category": "stock4",
-  "prices": [
-    {"quantity": 50, "price": 350},
-    {"quantity": 100, "price": 580},
-    {"quantity": 500, "price": 2500},
-    {"quantity": 1000, "price": 4200}
-  ]
-},
- {
-  "id": 11,
-  "name": "TANGIE NO FARM PASTE ANONYMOUS",
-  "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773223476/TANGE_MUSICA_-_Realizzato_con_Clipchamp_jzsucb.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773223467/Screenshot_2026-01-25_175132_dlyn3a.png",
-  "category": "stock2",
-  "prices": [
-    {"quantity": 50, "price": 450},
-    {"quantity": 100, "price": 850},
-    {"quantity": 500, "price": 3200},
-    {"quantity": 1000, "price": 6000}
   ]
 },
   
 {
-  "id": 12,
-  "name": "FULL MELT FROZEN 120U PLASMA STATIC 4 STRAIN",
+  "id": 8,
+  "name": "FULL MELT FROZEN 120U PLASMA STATIC",
   "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773223461/FULL_MELT_FROZEN_PLASMASTATIC_keioxe.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773223454/full_melt_120_u_frozen_yxmbx3.png",
+  "mediaUrl": "https://videodelivery.net/63bfa2fec28cc3b84688eada7751327b/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/437fa0cc-c89f-489a-9801-eb9f5890ed00/public",
   "category": "stock2",
   "prices": [
     {"quantity": 50, "price": 450},
-    {"quantity": 100, "price": 800},
+    {"quantity": 100, "price": 750},
     {"quantity": 500, "price": 3200},
     {"quantity": 1000, "price": 6500}
   ]
 },
    
 {
-  "id": 13,
-  "name": "MELT PREMIUM FORBIDDEN",
-  "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773224669/MELT_PREMIUM_FORBIDDEN_epogqk.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773223461/MELT_FORBIDDEN_qfyyjc.png",
-  "category": "stock2",
-  "prices": [
-    {"quantity": 50, "price": 400},
-    {"quantity": 100, "price": 750},
-    {"quantity": 500, "price": 3400},
-    {"quantity": 1000, "price": 5800}
-  ]
-},
-   
-{
-  "id": 14,
+  "id": 9,
   "name": "CALI USA PREMIUM",
   "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773223458/CALI_USA_TOP_MUSICA_-_Realizzato_con_Clipchamp_ptcakf.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773223455/CALI_USA_TOP_yrlo8e.png",
+  "mediaUrl": "https://videodelivery.net/69b408496263e4fb8537dae7da27b455/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/9dc4e031-8678-4243-11a3-006cfaaa7200/public",
   "category": "stock3",
   "prices": [
     {"quantity": 50, "price": 400},
@@ -205,87 +135,14 @@
   ]
 },
    
-{
-  "id": 15,
-  "name": "MELT PREMIUM GMO X STRAWBERRY",
-  "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773223465/MELT_PREMIUM_GMO_X_STRAWBERRY_rl24ca.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773224880/gmo_x_strawberry_grqbjc.png",
-  "category": "stock2",
-  "prices": [
-    {"quantity": 50, "price": 400},
-    {"quantity": 100, "price": 750},
-    {"quantity": 500, "price": 3400},
-    {"quantity": 1000, "price": 5800}
-  ]
-},
-   
-{
-  "id": 16,
-  "name": "DRY DUBAI CHOCOLADE",
-  "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/dizbl4jib/video/upload/v1769427072/DRY_WORK_gka1nd.mp4",
-  "previewImage": "https://res.cloudinary.com/dizbl4jib/image/upload/v1769427071/DRY_WORK_ponju6.png",
-  "category": "stock",
-  "prices": [
-    {"quantity": 50, "price": 200},
-    {"quantity": 100, "price": 350},
-    {"quantity": 500, "price": 1500},
-    {"quantity": 1000, "price": 2700}
-  ]
-},
-   
-{
-  "id": 17,
-  "name": "BLUE ZUSHI TOP FILTERED 190-73u",
-  "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773223455/bluezushi_top_filtered_190-73u_bjyiqk.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773223454/bluezushi_nphexx.png",
-  "category": "stock",
-  "prices": [
-    
-    {"quantity": 100, "price": 500},
-     {"quantity": 500, "price": 2200}
-  ]
-},
-   
-{
-  "id": 0,
-  "name": "ALIEN ZKITTLEZ TOP FILTERED 190-73u",
-  "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773223455/Alien_Zkittlez_Top_Filtered_190-73u_qc9f5r.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773223454/ALIEN_g1forn.png",
-  "category": "stock",
-  "prices": [
-    
-    {"quantity": 100, "price": 500},
-   {"quantity": 500, "price": 2200}
-  ]
-},
-   
+
 
 {
-  "id": 18,
-  "name": "MELT PREMIUM LIMOSA",
+  "id": 10,
+  "name": "TROPCHERRY/CHEETOZ STATIC 190/70U ",
   "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773223465/MELT_PREMIUM_LIMOSA_rbock4.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773223461/LIMOSA_gobdyn.png",
-  "category": "stock2",
-  "prices": [
-    
-   {"quantity": 50, "price": 400},
-    {"quantity": 100, "price": 750},
-    {"quantity": 500, "price": 3400},
-    {"quantity": 1000, "price": 5800}
-  ]
-},
-
-{
-  "id": 19,
-  "name": "TROPCHERRY STATIC ",
-  "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773226460/STATIC_TROPCHERRY_u7aw4f.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773226457/STATIC_TROPCHERRY_fb7t0d.png",
+  "mediaUrl": "https://videodelivery.net/5158b5f56f1daf528c84ef0878280d57/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/9f2d3728-e33f-48c5-2895-ea66f19f7200/public",
   "category": "stock2",
   "prices": [
     
@@ -297,59 +154,12 @@
   ]
 },
   
-  
 {
-  "id": 20,
-  "name": "FRUITTELLA 90U PREMIUM ",
-  "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773226074/FRUITTELLA_k6s6a8.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773226116/FRUITTELLA_dncve5.png",
-  "category": "stock2",
-  "prices": [
-    
-   {"quantity": 10, "price": 150},
-    {"quantity": 50, "price": 700},
-    {"quantity": 100, "price": 1300},
-    {"quantity": 1000, "price": 12000}
-  ]
-},
-
-{
-  "id": 21,
-  "name": "OVULETTI STATIC ORANGE DA 5G",
-  "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1774394067/ovuli_static_5g_mvmdoj.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1774394336/OVULI_STATIC_5G_ffbhr3.png",
-  "category": "stock4",
-  "prices": [
-    {"quantity": 50, "price": 500},
-    {"quantity": 100, "price": 900},
-    {"quantity": 500, "price": 3750},
-    {"quantity": 1000, "price": 0}
-  ]
-},
-
-{
-  "id": 22,
-  "name": "OVULETTI STATIC ORANGE DA 5G",
-  "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1774394067/ovuli_static_5g_mvmdoj.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1774394336/OVULI_STATIC_5G_ffbhr3.png",
-  "category": "stock2",
-  "prices": [
-    {"quantity": 50, "price": 500},
-    {"quantity": 100, "price": 900},
-    {"quantity": 500, "price": 3750},
-    {"quantity": 1000, "price": 0}
-  ]
-},
-  
-{
-  "id": 23,
+  "id": 11,
   "name": "OVULI STATIC",
   "mediaType": "video",
-  "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773225143/Ovuli_Static_ffo0nw.mp4",
-  "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773223466/ovuli_static_foto_fhrclk.png",
+  "mediaUrl": "https://videodelivery.net/e6d237420607adb5ac1fb7eb647ab8d4/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/b2048f81-7c2c-45fb-d6ea-a630f49f2b00/public",
   "category": "stock2",
   "prices": [
     
@@ -361,11 +171,11 @@
 },
   
   {
-    "id": 24,
+    "id": 12,
     "name": "ICE WPFF 70U PEACH MINTZ - GRAPE GAS",
     "mediaType": "video",
-    "mediaUrl": "https://res.cloudinary.com/df3cldos7/video/upload/v1773223460/ICE_ewcvom.mp4",
-    "previewImage": "https://res.cloudinary.com/df3cldos7/image/upload/v1773223461/ICE4_cigyrw.jpg",
+    "mediaUrl": "https://videodelivery.net/31917f73a9a561b63cdc773bd152df0c/manifest/video.m3u8",
+    "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/1b11acc2-19d1-44a9-779c-5de4c98eed00/public",
     "category": "stock5",
     "prices": [
       {"quantity": 10, "price": 500},
