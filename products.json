@@ -2,10 +2,10 @@
   
 {
   "id": 1,
-  "name": "DRY CRIME",
+  "name": "DRY KILOGRAM FARM",
   "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/55bd20bc354868d23bddcc4a3ed599ac/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/2bae4344-220a-4c01-8612-507e6e79ed00/public",
+  "mediaUrl": "https://videodelivery.net/fdab4c73cd2b256acc73831de455f555/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/a49f162f-4b24-4aa5-d02a-7eb8440cee00/public",
   "category": "stock1",
   "prices": [
     {"quantity": 50, "price": 200},
@@ -13,21 +13,7 @@
     {"quantity": 500, "price": 1600},
     {"quantity": 1000, "price": 2800}
   ]
-},
-  {
-  "id": 2,
-  "name": "LBENJ FAMILY",
-  "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/3ee003cb8e557e22da373d8e6e116a1b/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/515632fd-2ba4-4e85-9844-d1e92b37fc00/public",
-  "category": "stock1",
-  "prices": [
-    {"quantity": 50, "price": 200},
-    {"quantity": 100, "price": 360},
-    {"quantity": 500, "price": 1600},
-    {"quantity": 1000, "price": 2800}
-  ]
-},
+
   {
   "id": 3,
   "name": "FROZEN BASE",
