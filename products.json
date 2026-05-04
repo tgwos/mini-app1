@@ -14,23 +14,6 @@
     {"quantity": 1000, "price": 2800}
   ]
 },
-  
-  {
-  "id": 2,
-  "name": "FROZEN BASE",
-  "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/814f77432bc8b1410a890b8a97fa0075/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/98f11a67-9b03-454a-ff77-e8fb84b5ad00/public",
-  "category": "stock2",
-  "prices": [
-    {"quantity": 25, "price": 200},
-    {"quantity": 50, "price": 350},
-    {"quantity": 100, "price": 600},
-    {"quantity": 500, "price": 2250},
-    {"quantity": 1000, "price": 4200}
-  ]
-},
-
 
 {
   "id": 3,
@@ -73,7 +56,7 @@
   "category": "stock3",
   "prices": [
     {"quantity": 50, "price": 300},
-    {"quantity": 100, "price": 500},
+    {"quantity": 100, "price": 520},
     {"quantity": 500, "price": 2200},
     {"quantity": 1000, "price": 3600}
   ]
@@ -91,40 +74,6 @@
     {"quantity": 100, "price": 750},
     {"quantity": 500, "price": 3200},
     {"quantity": 1000, "price": 6500}
-  ]
-},
-   
-{
-  "id": 7,
-  "name": "CALI USA PREMIUM",
-  "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/69b408496263e4fb8537dae7da27b455/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/9dc4e031-8678-4243-11a3-006cfaaa7200/public",
-  "category": "stock3",
-  "prices": [
-    {"quantity": 50, "price": 400},
-    {"quantity": 100, "price": 600},
-    {"quantity": 500, "price": 2700},
-    {"quantity": 1000, "price": 5000}
-  ]
-},
-   
-
-
-{
-  "id": 8,
-  "name": "TROPCHERRY/CHEETOZ STATIC 190/70U ",
-  "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/5158b5f56f1daf528c84ef0878280d57/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/9f2d3728-e33f-48c5-2895-ea66f19f7200/public",
-  "category": "stock2",
-  "prices": [
-    
-   {"quantity": 10, "price": 150},
-    {"quantity": 50, "price": 650},
-    {"quantity": 100, "price": 1100},
-     {"quantity": 500, "price": 4900},
-    {"quantity": 1000, "price": 8900}
   ]
 },
   
