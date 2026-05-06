@@ -49,16 +49,16 @@
 
 {
   "id": 4,
-  "name": "CALI RUNTZ",
+  "name": "MIMOSA PUNCH",
   "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/92d033d7bce5678288f2a8a7904d593e/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/6f7ac844-d882-43bb-492f-506bf2a76d00/public",
+  "mediaUrl": "https://videodelivery.net/a6eb878cc036291f83e26eef3b425928/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/f249a424-0bc2-4958-9f3e-f09f35b56c00/public",
   "category": "stock3",
   "prices": [
-    {"quantity": 50, "price": 300},
-    {"quantity": 100, "price": 520},
-    {"quantity": 500, "price": 2200},
-    {"quantity": 1000, "price": 3600}
+    {"quantity": 50, "price": 350},
+    {"quantity": 100, "price": 550},
+    {"quantity": 500, "price": 2500},
+    {"quantity": 1000, "price": 3800}
   ]
 },
   
