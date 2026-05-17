@@ -61,7 +61,7 @@
     {"quantity": 1000, "price": 3800}
   ]
 },
-  
+
 {
   "id": 5,
   "name": "FULL MELT FROZEN 120U PLASMA STATIC",
@@ -79,6 +79,22 @@
   
 {
   "id": 6,
+  "name": "TOP MOUSSE",
+  "mediaType": "video",
+  "mediaUrl": "https://videodelivery.net/4ca28b1186598baba407ac0a207a5b8c/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/3ea40a64-e04c-4a22-97a8-993d94d03c00/public",
+  "category": "stock1",
+  "prices": [
+   
+    {"quantity": 500, "price": 1000},
+    {"quantity": 1000, "price": 1800},
+     {"quantity": 2000, "price": 3400},
+     {"quantity": 3000, "price": 4500}
+  ]
+},
+  
+{
+  "id": 7,
   "name": "OVULI STATIC",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/e6d237420607adb5ac1fb7eb647ab8d4/manifest/video.m3u8",
@@ -94,7 +110,7 @@
 },
   
   {
-    "id": 7,
+    "id": 8,
     "name": "ICE WPFF 70U PEACH MINTZ - GRAPE GAS",
     "mediaType": "video",
     "mediaUrl": "https://videodelivery.net/31917f73a9a561b63cdc773bd152df0c/manifest/video.m3u8",
