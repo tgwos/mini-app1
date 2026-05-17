@@ -85,7 +85,6 @@
   "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/3ea40a64-e04c-4a22-97a8-993d94d03c00/public",
   "category": "stock1",
   "prices": [
-    {"quantity": 100, "price": 00},
     {"quantity": 500, "price": 1000},
     {"quantity": 1000, "price": 1800},
      {"quantity": 2000, "price": 3400},
