@@ -114,7 +114,7 @@
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/f08646f8b155fc3779d2f16981823d2b/manifest/video.m3u8",
   "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/86d253be-dbb8-4ae8-5914-738607a57000/public",
-  "category": "stock4",
+  "category": "stock6",
   "prices": [
      
     {"quantity": 50, "price": 400},
@@ -129,7 +129,7 @@
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/3b74dc210bed52793eca50fa80236691/manifest/video.m3u8",
   "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/03932055-c657-4cb9-2737-29223828e300/public",
-  "category": "stock4",
+  "category": "stock6",
   "prices": [
       
     {"quantity": 50, "price": 400},
