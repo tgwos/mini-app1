@@ -8,10 +8,10 @@
   "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/a49f162f-4b24-4aa5-d02a-7eb8440cee00/public",
   "category": "stock1",
   "prices": [
-    {"quantity": 50, "price": 200},
-    {"quantity": 100, "price": 350},
-    {"quantity": 500, "price": 1600},
-    {"quantity": 1000, "price": 2800}
+    {"quantity": 50, "price": 180},
+    {"quantity": 100, "price": 330},
+    {"quantity": 500, "price": 1400},
+    {"quantity": 1000, "price": 2600}
   ]
 },
 
@@ -148,10 +148,10 @@
   "category": "stock2",
   "prices": [
     
-   {"quantity": 10, "price": 100},
-    {"quantity": 50, "price": 400},
-    {"quantity": 100, "price": 600},
-    {"quantity": 1000, "price": 5500}
+   {"quantity": 10, "price": 50},
+    {"quantity": 50, "price": 250},
+    {"quantity": 100, "price": 400},
+    {"quantity": 1000, "price": 2800}
   ]
 },
   
