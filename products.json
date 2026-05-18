@@ -107,9 +107,39 @@
     {"quantity": 1000, "price": 8800}
   ]
 },
+
+  {
+  "id": 8,
+  "name": "MOUNTAIN GIANTS APPLE BANANA",
+  "mediaType": "video",
+  "mediaUrl": "https://videodelivery.net/f08646f8b155fc3779d2f16981823d2b/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/86d253be-dbb8-4ae8-5914-738607a57000/public",
+  "category": "stock4",
+  "prices": [
+     
+    {"quantity": 50, "price": 400},
+    {"quantity": 100, "price": 650},
+    {"quantity": 1000, "price": 5800}
+  ]
+},
+
+   {
+  "id": 9,
+  "name": "MOUNTAIN GIANTS LIMEPAYA",
+  "mediaType": "video",
+  "mediaUrl": "https://videodelivery.net/3b74dc210bed52793eca50fa80236691/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/03932055-c657-4cb9-2737-29223828e300/public",
+  "category": "stock4",
+  "prices": [
+      
+    {"quantity": 50, "price": 400},
+    {"quantity": 100, "price": 650},
+    {"quantity": 1000, "price": 5800}
+  ]
+},
   
   {
-    "id": 8,
+    "id": 10,
     "name": "ICE WPFF 70U PEACH MINTZ - GRAPE GAS",
     "mediaType": "video",
     "mediaUrl": "https://videodelivery.net/31917f73a9a561b63cdc773bd152df0c/manifest/video.m3u8",
