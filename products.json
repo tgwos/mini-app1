@@ -155,9 +155,24 @@
     {"quantity": 1000, "price": 3000}
   ]
 },
+
+{
+  "id": 11,
+  "name": "TOP DRY FILTRATO ",
+  "mediaType": "video",
+  "mediaUrl": "https://videodelivery.net/1cc5e3088222e1abf59a8e4f56fb955f/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/3184055c-e265-4b9e-fe1d-24721557b300/public",
+  "category": "stock1",
+  "prices": [
+    {"quantity": 50, "price": 200},
+    {"quantity": 100, "price": 380},
+    {"quantity": 500, "price": 1550},
+    {"quantity": 1000, "price": 2900}
+  ]
+},
   
   {
-    "id": 11,
+    "id": 12,
     "name": "ICE WPFF 70U PEACH MINTZ - GRAPE GAS",
     "mediaType": "video",
     "mediaUrl": "https://videodelivery.net/31917f73a9a561b63cdc773bd152df0c/manifest/video.m3u8",
