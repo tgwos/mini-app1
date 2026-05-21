@@ -2,16 +2,16 @@
   
 {
   "id": 1,
-  "name": "DRY KILOGRAM FARM",
+  "name": "DRY KILOGRAM FARM (TERMINATO)",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/fdab4c73cd2b256acc73831de455f555/manifest/video.m3u8",
   "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/a49f162f-4b24-4aa5-d02a-7eb8440cee00/public",
   "category": "stock1",
   "prices": [
-    {"quantity": 50, "price": 180},
-    {"quantity": 100, "price": 330},
-    {"quantity": 500, "price": 1400},
-    {"quantity": 1000, "price": 2500}
+    {"quantity": 50, "price": 000},
+    {"quantity": 100, "price": 000},
+    {"quantity": 500, "price": 000},
+    {"quantity": 1000, "price": 000}
   ]
 },
 
