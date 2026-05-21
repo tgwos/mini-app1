@@ -5,13 +5,13 @@
   "name": "DRY WORK ",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/90b57b565bd23e971fb225dd27174c02/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/a49f162f-4b24-4aa5-d02a-7eb8440cee00/public",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/d789b713-2a05-4724-e103-b3a3217bf700/public",
   "category": "stock1",
   "prices": [
-    {"quantity": 50, "price": 000},
-    {"quantity": 100, "price": 000},
-    {"quantity": 500, "price": 000},
-    {"quantity": 1000, "price": 000}
+    {"quantity": 50, "price": 180},
+    {"quantity": 100, "price": 320},
+    {"quantity": 500, "price": 1400},
+    {"quantity": 1000, "price": 2600}
   ]
 },
 
