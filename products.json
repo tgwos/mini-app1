@@ -118,8 +118,6 @@
   "prices": [
     
     
-    {"quantity": 25, "price": 0101},
-    {"quantity": 50, "price": 0101},
     {"quantity": 100, "price": 2500}
     
   ]
