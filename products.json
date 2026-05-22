@@ -120,10 +120,10 @@
   "category": "stock6",
   "prices": [
     
-    {"quantity": 10pz, "price": 330},
-    {"quantity": 20pz, "price": 600},
-    {"quantity": 50pz, "price": 1400},
-    {"quantity": 100pz, "price": 2300}
+    {"quantity": 10, "price": 330},
+    {"quantity": 20, "price": 600},
+    {"quantity": 50, "price": 1400},
+    {"quantity": 100, "price": 2300}
     
   ]
 },
