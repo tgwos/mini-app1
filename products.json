@@ -97,17 +97,17 @@
   
 {
   "id": 7,
-  "name": "OVULI STATIC",
+  "name": "OVULI MOUNTAIN TERPS (STOCK LIMITATO) ",
   "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/e6d237420607adb5ac1fb7eb647ab8d4/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/b2048f81-7c2c-45fb-d6ea-a630f49f2b00/public",
+  "mediaUrl": "https://videodelivery.net/f66d360f301306f6ddc97c8cc61cf09c/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/6aea2871-ae15-4405-5d8f-d26420b7f800/public",
   "category": "stock2",
   "prices": [
     
-   {"quantity": 10, "price": 130},
-    {"quantity": 50, "price": 600},
-    {"quantity": 100, "price": 1100},
-    {"quantity": 1000, "price": 8800}
+   {"quantity": 10, "price": 90},
+    {"quantity": 50, "price": 390},
+    {"quantity": 100, "price": 650},
+    {"quantity": 1000, "price": 5200}
   ]
 },
 
