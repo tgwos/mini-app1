@@ -113,37 +113,24 @@
 
   {
   "id": 8,
-  "name": "MOUNTAIN GIANTS APPLE BANANA",
+  "name": "PEN PACKWOODS X RUNTZ 1000 MG",
   "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/f08646f8b155fc3779d2f16981823d2b/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/86d253be-dbb8-4ae8-5914-738607a57000/public",
+  "mediaUrl": "https://videodelivery.net/4b1c0cec81119ef037bb9b5652ef42fe/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/483fab74-901c-4830-9b1b-20e9b3ebcc00/public",
   "category": "stock6",
   "prices": [
-     
-    {"quantity": 50, "price": 400},
-    {"quantity": 100, "price": 650},
-    {"quantity": 1000, "price": 5800}
-  ]
-},
-
-   {
-  "id": 9,
-  "name": "MOUNTAIN GIANTS LIMEPAYA",
-  "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/3b74dc210bed52793eca50fa80236691/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/03932055-c657-4cb9-2737-29223828e300/public",
-  "category": "stock6",
-  "prices": [
-      
-    {"quantity": 50, "price": 400},
-    {"quantity": 100, "price": 650},
-    {"quantity": 1000, "price": 5800}
+    
+    {"quantity": 10pz, "price": 330},
+    {"quantity": 20pz, "price": 600},
+    {"quantity": 50pz, "price": 1400},
+    {"quantity": 100pz, "price": 2300}
+    
   ]
 },
 
 
   {
-  "id": 10,
+  "id": 9,
   "name": "FROZEN FF X GMO (GIA' CURATO) ",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/effac2e673e3afcbcea91ba00e12b072/manifest/video.m3u8",
@@ -159,7 +146,7 @@
 },
 
 {
-  "id": 11,
+  "id": 10,
   "name": "TOP DRY FILTRATO ",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/1cc5e3088222e1abf59a8e4f56fb955f/manifest/video.m3u8",
@@ -174,7 +161,7 @@
 },
   
   {
-    "id": 12,
+    "id": 11,
     "name": "ICE WPFF 70U PEACH MINTZ - GRAPE GAS",
     "mediaType": "video",
     "mediaUrl": "https://videodelivery.net/31917f73a9a561b63cdc773bd152df0c/manifest/video.m3u8",
