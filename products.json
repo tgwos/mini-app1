@@ -17,17 +17,18 @@
 
 {
   "id": 2,
-  "name": "FROZEN CRIME ",
+  "name": "FROZEN SIFT GEMOSA OVERCURED (STOCK LIMITATO)  ",
   "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/ba80d8b00951b03733f9b74afbed4b0c/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/abaaa997-3516-4524-b88a-e24536a40700/public",
+  "mediaUrl": "https://videodelivery.net/5fc6b51563d17dec2caaf7b8ffd9799d/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/09600a68-646a-42ad-b023-f056f3253f00/public",
   "category": "stock2",
   "prices": [
     
-   {"quantity": 10, "price": 100},
+   {"quantity": 10, "price": 70},
     {"quantity": 50, "price": 300},
-    {"quantity": 100, "price": 500},
-    {"quantity": 1000, "price": 4000}
+    {"quantity": 100, "price": 450},
+    {"quantity": 500, "price": 2000},
+    {"quantity": 1000, "price": 3500}
   ]
 },
   
