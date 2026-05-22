@@ -162,15 +162,15 @@
   
   {
     "id": 11,
-    "name": "ICE WPFF 70U PEACH MINTZ - GRAPE GAS",
+    "name": "ROSIN (STOCK LIMITATISSIMO)",
     "mediaType": "video",
-    "mediaUrl": "https://videodelivery.net/31917f73a9a561b63cdc773bd152df0c/manifest/video.m3u8",
-    "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/1b11acc2-19d1-44a9-779c-5de4c98eed00/public",
+    "mediaUrl": "https://videodelivery.net/20dba05e8c8ffbd424d3b14129fd3d06/manifest/video.m3u8",
+    "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/e2173445-ad65-4af8-6acb-8d7432e79200/public",
     "category": "stock5",
     "prices": [
-      {"quantity": 10, "price": 500},
-      {"quantity": 50, "price": 2500},
-      {"quantity": 100, "price": 40000}
+      {"quantity": 20, "price": 350},
+      {"quantity": 50, "price": 790},
+      {"quantity": 100, "price": 1500}
      
     ]
   }
