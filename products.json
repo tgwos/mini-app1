@@ -25,9 +25,9 @@
   "prices": [
     
    {"quantity": 10, "price": 70},
-    {"quantity": 50, "price": 280},
-    {"quantity": 100, "price": 400},
-    {"quantity": 500, "price": 1900},
+    {"quantity": 50, "price": 250},
+    {"quantity": 100, "price": 350},
+    {"quantity": 500, "price": 1800},
     {"quantity": 1000, "price": 3300}
   ]
 },
