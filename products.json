@@ -88,7 +88,9 @@
   "category": "stock4",
   "prices": [
     {"quantity": 2000, "price": 3500},
-    {"quantity": 3000, "price": 4600}
+    {"quantity": 3000, "price": 4600},
+    {"quantity": 5000, "price": 7400},
+    {"quantity": 10000, "price": 13500}
   ]
 },
   
