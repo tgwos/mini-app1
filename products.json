@@ -136,10 +136,10 @@
   "prices": [
     
    {"quantity": 10, "price": 100},
-   {"quantity": 50, "price": 400},
-   {"quantity": 100, "price": 680},
-   {"quantity": 500, "price": 2900},
-   {"quantity": 1000, "price": 5300}
+   {"quantity": 50, "price": 350},
+   {"quantity": 100, "price": 580},
+   {"quantity": 500, "price": 2650},
+   {"quantity": 1000, "price": 5000}
   ]
 },
 
