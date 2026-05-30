@@ -157,9 +157,26 @@
     {"quantity": 1000, "price": 2900}
   ]
 },
+
+  {
+  "id": 11,
+  "name": "FROZEN SIFT",
+  "mediaType": "video",
+  "mediaUrl": "https://videodelivery.net/b35d71f9c13c63c02314bd80bddc48ba/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/57356fa1-fcde-4599-6d0e-983fac5b5300/public",
+  "category": "stock2",
+  "prices": [
+    
+    {"quantity": 100, "price": 590},
+    {"quantity": 200, "price": 1150},
+    {"quantity": 500, "price": 2400},
+    {"quantity": 1000, "price": 4500},
+     {"quantity": 2000, "price": 8200}
+  ]
+},
   
   {
-    "id": 11,
+    "id": 12,
     "name": "ROSIN (STOCK LIMITATISSIMO)",
     "mediaType": "video",
     "mediaUrl": "https://videodelivery.net/20dba05e8c8ffbd424d3b14129fd3d06/manifest/video.m3u8",
