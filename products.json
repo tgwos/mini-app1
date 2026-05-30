@@ -191,9 +191,26 @@
     {"quantity": 1000, "price": 21000}
   ]
 },
+
+ {
+  "id": 13,
+  "name": "GAZ SELECTION PREMIUM FROZEN",
+  "mediaType": "video",
+  "mediaUrl": "https://videodelivery.net/e99990beb730f604d4e85657dbf17a10/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/3fa2832a-dce6-4cab-c896-f33be35a5d00/public",
+  "category": "stock2",
+  "prices": [
+    
+    {"quantity": 100, "price": 700},
+    {"quantity": 200, "price": 1350},
+    {"quantity": 500, "price": 2950},
+    {"quantity": 1000, "price": 5500},
+     {"quantity": 2000, "price": 10500}
+  ]
+},
   
   {
-    "id": 13,
+    "id": 14,
     "name": "ROSIN (STOCK LIMITATISSIMO)",
     "mediaType": "video",
     "mediaUrl": "https://videodelivery.net/20dba05e8c8ffbd424d3b14129fd3d06/manifest/video.m3u8",
