@@ -79,23 +79,10 @@
   ]
 },
   
-{
-  "id": 6,
-  "name": "TOP MOUSSE (AL MOMENTO DISPONIBILE SOLO BULK)",
-  "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/4ca28b1186598baba407ac0a207a5b8c/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/3ea40a64-e04c-4a22-97a8-993d94d03c00/public",
-  "category": "stock4",
-  "prices": [
-    {"quantity": 2000, "price": 3500},
-    {"quantity": 3000, "price": 4600},
-    {"quantity": 5000, "price": 7400},
-    {"quantity": 10000, "price": 13500}
-  ]
-},
+
   
 {
-  "id": 7,
+  "id": 6,
   "name": "OVULI MOUNTAIN TERPS (STOCK LIMITATO) ",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/f66d360f301306f6ddc97c8cc61cf09c/manifest/video.m3u8",
@@ -111,7 +98,7 @@
 },
 
   {
-  "id": 8,
+  "id": 7,
   "name": "PEN PACKWOODS X RUNTZ 1000 MG",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/4b1c0cec81119ef037bb9b5652ef42fe/manifest/video.m3u8",
@@ -127,7 +114,7 @@
 
 
   {
-  "id": 9,
+  "id": 8,
   "name": "FORBIDDEN FRUIT STATIC 120/190U ",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/f48cf0a17fa03d68a532fcbb9117158f/manifest/video.m3u8",
@@ -144,7 +131,7 @@
 },
 
 {
-  "id": 10,
+  "id": 9,
   "name": "TOP DRY FILTRATO ",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/1cc5e3088222e1abf59a8e4f56fb955f/manifest/video.m3u8",
@@ -159,7 +146,7 @@
 },
 
   {
-  "id": 11,
+  "id": 10,
   "name": "FROZEN SIFT",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/b35d71f9c13c63c02314bd80bddc48ba/manifest/video.m3u8",
@@ -176,7 +163,7 @@
 },
 
 {
-  "id": 12,
+  "id": 11,
   "name": "COCA 95% PURE",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/c725db792a38e51f45ab0a4bcb54c8af/manifest/video.m3u8",
@@ -193,7 +180,7 @@
 },
 
  {
-  "id": 13,
+  "id": 12,
   "name": "GAZ SELECTION PREMIUM FROZEN",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/e99990beb730f604d4e85657dbf17a10/manifest/video.m3u8",
@@ -210,7 +197,7 @@
 },
   
   {
-    "id": 14,
+    "id": 13,
     "name": "ROSIN (STOCK LIMITATISSIMO)",
     "mediaType": "video",
     "mediaUrl": "https://videodelivery.net/20dba05e8c8ffbd424d3b14129fd3d06/manifest/video.m3u8",
