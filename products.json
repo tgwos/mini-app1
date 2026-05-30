@@ -174,9 +174,26 @@
      {"quantity": 2000, "price": 8200}
   ]
 },
+
+{
+  "id": 12,
+  "name": "COCA 95% PURE",
+  "mediaType": "video",
+  "mediaUrl": "https://videodelivery.net/c725db792a38e51f45ab0a4bcb54c8af/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/6dc61067-e92f-495d-a01a-197e354cb600/public",
+  "category": "stock4",
+  "prices": [
+    
+    {"quantity": 10, "price": 480},
+    {"quantity": 20, "price": 900},
+    {"quantity": 50, "price": 2000},
+    {"quantity": 100, "price": 3600},
+    {"quantity": 1000, "price": 21000}
+  ]
+},
   
   {
-    "id": 12,
+    "id": 13,
     "name": "ROSIN (STOCK LIMITATISSIMO)",
     "mediaType": "video",
     "mediaUrl": "https://videodelivery.net/20dba05e8c8ffbd424d3b14129fd3d06/manifest/video.m3u8",
