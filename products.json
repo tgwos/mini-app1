@@ -14,26 +14,9 @@
     {"quantity": 1000, "price": 2500}
   ]
 },
-
-{
-  "id": 2,
-  "name": "FROZEN SIFT GEMOSA OVERCURED (STOCK LIMITATO)  ",
-  "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/5fc6b51563d17dec2caaf7b8ffd9799d/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/09600a68-646a-42ad-b023-f056f3253f00/public",
-  "category": "stock2",
-  "prices": [
-    
-   {"quantity": 10, "price": 70},
-    {"quantity": 50, "price": 250},
-    {"quantity": 100, "price": 350},
-    {"quantity": 500, "price": 1650},
-    {"quantity": 1000, "price": 3100}
-  ]
-},
   
   {
-  "id": 3,
+  "id": 2,
   "name": "CHERRY GAS",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/d73757a56893d0254655ffbcf5a9a22b/manifest/video.m3u8",
@@ -49,7 +32,7 @@
 
 
 {
-  "id": 4,
+  "id": 3,
   "name": "MIMOSA PUNCH",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/a6eb878cc036291f83e26eef3b425928/manifest/video.m3u8",
@@ -64,7 +47,7 @@
 },
 
 {
-  "id": 5,
+  "id": 4,
   "name": "FROZEN NO FARM (STRAIN DIVERSI)",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/969bb11c077e48631790481f01411d39/manifest/video.m3u8",
@@ -82,7 +65,7 @@
 
   
 {
-  "id": 6,
+  "id": 5,
   "name": "OVULI MOUNTAIN TERPS (STOCK LIMITATO) ",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/f66d360f301306f6ddc97c8cc61cf09c/manifest/video.m3u8",
@@ -98,7 +81,7 @@
 },
 
   {
-  "id": 7,
+  "id": 6,
   "name": "PEN PACKWOODS X RUNTZ 1000 MG",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/4b1c0cec81119ef037bb9b5652ef42fe/manifest/video.m3u8",
@@ -114,12 +97,12 @@
 
 
   {
-  "id": 8,
-  "name": "FORBIDDEN FRUIT STATIC 120/190U ",
+  "id": 7,
+  "name": "FORBIDDEN FRUIT  ",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/f48cf0a17fa03d68a532fcbb9117158f/manifest/video.m3u8",
   "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/9aa4fc2d-0b7d-4bc2-2e46-490e8c566b00/public",
-  "category": "stock2",
+  "category": "stock1",
   "prices": [
     
    {"quantity": 10, "price": 100},
@@ -130,23 +113,10 @@
   ]
 },
 
-{
-  "id": 9,
-  "name": "TOP DRY FILTRATO ",
-  "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/1cc5e3088222e1abf59a8e4f56fb955f/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/3184055c-e265-4b9e-fe1d-24721557b300/public",
-  "category": "stock1",
-  "prices": [
-    {"quantity": 50, "price": 200},
-    {"quantity": 100, "price": 380},
-    {"quantity": 500, "price": 1550},
-    {"quantity": 1000, "price": 2900}
-  ]
-},
+
 
   {
-  "id": 10,
+  "id": 8,
   "name": "FROZEN SIFT",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/b35d71f9c13c63c02314bd80bddc48ba/manifest/video.m3u8",
@@ -163,7 +133,7 @@
 },
 
 {
-  "id": 11,
+  "id": 9,
   "name": "COCA 95% PURE",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/c725db792a38e51f45ab0a4bcb54c8af/manifest/video.m3u8",
@@ -180,7 +150,7 @@
 },
 
  {
-  "id": 12,
+  "id": 10,
   "name": "GAZ SELECTION PREMIUM FROZEN",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/e99990beb730f604d4e85657dbf17a10/manifest/video.m3u8",
@@ -197,7 +167,7 @@
 },
   
   {
-    "id": 13,
+    "id": 11,
     "name": "ROSIN (STOCK LIMITATISSIMO)",
     "mediaType": "video",
     "mediaUrl": "https://videodelivery.net/20dba05e8c8ffbd424d3b14129fd3d06/manifest/video.m3u8",
