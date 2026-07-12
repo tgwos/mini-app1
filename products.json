@@ -34,10 +34,10 @@
   
   {
   "id": 3,
-  "name": "TOP CALI BISCOTTI",
+  "name": "CHERRY GAS",
   "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/5ac2cded7e9ea1fc4cc5b53f6d24498b/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/1446534a-635b-47c2-83a8-51d393e33000/public",
+  "mediaUrl": "https://videodelivery.net/d73757a56893d0254655ffbcf5a9a22b/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/0f33a372-e2a9-49d2-f198-3c21f961ea00/public",
   "category": "stock3",
   "prices": [
     {"quantity": 50, "price": 300},
