@@ -2,16 +2,16 @@
   
 {
   "id": 1,
-  "name": "DRY WORK ",
+  "name": "TOP DRY FILTRATO",
   "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/eeb0455ee8e1ac4467f9417996d8e0de/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/2144ab8a-0af9-4fa8-abc2-bd93a824b800/public",
+  "mediaUrl": "https://videodelivery.net/f2b85e5385e18dbfc315674faf8bcbef/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/a3a778c3-48d5-4f27-253c-7041b965a900/public",
   "category": "stock1",
   "prices": [
-    {"quantity": 50, "price": 180},
-    {"quantity": 100, "price": 320},
-    {"quantity": 500, "price": 1400},
-    {"quantity": 1000, "price": 2500}
+    {"quantity": 50, "price": 200},
+    {"quantity": 100, "price": 380},
+    {"quantity": 500, "price": 1900},
+    {"quantity": 1000, "price": 3100}
   ]
 },
   
