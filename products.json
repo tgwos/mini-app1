@@ -33,14 +33,14 @@
 
 {
   "id": 3,
-  "name": "MIMOSA PUNCH",
+  "name": "TROPICAL",
   "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/a6eb878cc036291f83e26eef3b425928/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/f249a424-0bc2-4958-9f3e-f09f35b56c00/public",
+  "mediaUrl": "https://videodelivery.net/d5885cb5ae9bd99c1217e77e2d6e076c/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/e57addbd-c442-43e5-4a21-7d5aa09f2400/public",
   "category": "stock3",
   "prices": [
-    {"quantity": 50, "price": 350},
-    {"quantity": 100, "price": 520},
+    {"quantity": 50, "price": 300},
+    {"quantity": 100, "price": 540},
     {"quantity": 500, "price": 2000},
     {"quantity": 1000, "price": 3500}
   ]
