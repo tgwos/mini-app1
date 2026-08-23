@@ -73,31 +73,18 @@
   "category": "stock2",
   "prices": [
     
-   {"quantity": 10, "price": 90},
-    {"quantity": 50, "price": 400},
+   {"quantity": 10, "price": 80},
+    {"quantity": 50, "price": 380},
     {"quantity": 100, "price": 650},
-    {"quantity": 1000, "price": 5200}
+    {"quantity": 1000, "price": 5300}
   ]
 },
+
+ 
+
 
   {
   "id": 6,
-  "name": "PEN PACKWOODS X RUNTZ 1000 MG",
-  "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/4b1c0cec81119ef037bb9b5652ef42fe/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/483fab74-901c-4830-9b1b-20e9b3ebcc00/public",
-  "category": "stock6",
-  "prices": [
-    
-    
-    {"quantity": 100, "price": 2500}
-    
-  ]
-},
-
-
-  {
-  "id": 7,
   "name": "FORBIDDEN FRUIT  ",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/f48cf0a17fa03d68a532fcbb9117158f/manifest/video.m3u8",
@@ -116,7 +103,7 @@
 
 
   {
-  "id": 8,
+  "id": 7,
   "name": "FROZEN SIFT",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/b35d71f9c13c63c02314bd80bddc48ba/manifest/video.m3u8",
@@ -124,16 +111,15 @@
   "category": "stock2",
   "prices": [
     
-    {"quantity": 100, "price": 590},
-    {"quantity": 200, "price": 1150},
+    {"quantity": 100, "price": 540},
+    {"quantity": 200, "price": 1050},
     {"quantity": 500, "price": 2400},
-    {"quantity": 1000, "price": 4500},
-     {"quantity": 2000, "price": 8200}
+    {"quantity": 1000, "price": 4600}
   ]
 },
 
 {
-  "id": 9,
+  "id": 8,
   "name": "COCA 95% PURE",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/c725db792a38e51f45ab0a4bcb54c8af/manifest/video.m3u8",
@@ -150,7 +136,7 @@
 },
 
  {
-  "id": 10,
+  "id": 9,
   "name": "GAZ SELECTION PREMIUM FROZEN",
   "mediaType": "video",
   "mediaUrl": "https://videodelivery.net/e99990beb730f604d4e85657dbf17a10/manifest/video.m3u8",
@@ -167,8 +153,8 @@
 },
   
   {
-    "id": 11,
-    "name": "ROSIN (STOCK LIMITATISSIMO)",
+    "id": 10,
+    "name": "ROSIN (STOCK LIMITATO)",
     "mediaType": "video",
     "mediaUrl": "https://videodelivery.net/20dba05e8c8ffbd424d3b14129fd3d06/manifest/video.m3u8",
     "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/e2173445-ad65-4af8-6acb-8d7432e79200/public",
