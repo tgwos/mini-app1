@@ -8,23 +8,23 @@
   "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/a3a778c3-48d5-4f27-253c-7041b965a900/public",
   "category": "stock1",
   "prices": [
-    {"quantity": 50, "price": 200},
-    {"quantity": 100, "price": 380},
+    {"quantity": 50, "price": 250},
+    {"quantity": 100, "price": 420},
     {"quantity": 500, "price": 1900},
-    {"quantity": 1000, "price": 3100}
+    {"quantity": 1000, "price": 3300}
   ]
 },
   
   {
   "id": 2,
-  "name": "CHERRY GAS",
+  "name": "RUNTZ",
   "mediaType": "video",
-  "mediaUrl": "https://videodelivery.net/d73757a56893d0254655ffbcf5a9a22b/manifest/video.m3u8",
-  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/0f33a372-e2a9-49d2-f198-3c21f961ea00/public",
+  "mediaUrl": "https://videodelivery.net/19972f1d7d37df8f7d660288f422b521/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/46886259-90a7-48ac-a96c-1bde3e957b00/public",
   "category": "stock3",
   "prices": [
-    {"quantity": 50, "price": 300},
-    {"quantity": 100, "price": 480},
+    {"quantity": 50, "price": 280},
+    {"quantity": 100, "price": 450},
     {"quantity": 500, "price": 1900},
     {"quantity": 1000, "price": 3300}
   ]
@@ -42,7 +42,7 @@
     {"quantity": 50, "price": 300},
     {"quantity": 100, "price": 540},
     {"quantity": 500, "price": 2000},
-    {"quantity": 1000, "price": 3500}
+    {"quantity": 1000, "price": 3400}
   ]
 },
 
