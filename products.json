@@ -166,10 +166,26 @@
      {"quantity": 2000, "price": 10500}
   ]
 },
+
+   {
+  "id": 11,
+  "name": "TOP MOUSSE",
+  "mediaType": "video",
+  "mediaUrl": "https://videodelivery.net/0211b8ca793382ebb2851960ef0605d1/manifest/video.m3u8",
+  "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/018a19bd-c65b-4b18-869f-0ab876cd3600/public",
+  "category": "stock6",
+  "prices": [
+    
+    {"quantity": 1000, "price": 2700},
+    {"quantity": 2000, "price": 5250},
+    {"quantity": 5000, "price": 10000},
+    {"quantity": 10000, "price": 18000}
+  ]
+},
   
   {
-    "id": 11,
-    "name": "ROSIN (STOCK LIMITATO)",
+    "id": 12,
+    "name": "ROSIN (TERMINATO)",
     "mediaType": "video",
     "mediaUrl": "https://videodelivery.net/20dba05e8c8ffbd424d3b14129fd3d06/manifest/video.m3u8",
     "previewImage": "https://imagedelivery.net/NDmb7wdAt1NpzNsXB7Yxlw/e2173445-ad65-4af8-6acb-8d7432e79200/public",
